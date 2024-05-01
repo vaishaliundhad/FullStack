@@ -1,0 +1,25 @@
+/* <element selector>
+h1{
+    color:red;
+} */
+
+/* <id selectoer> */
+/* #box{
+    color:darkgoldenrod;
+} */
+
+/* <class selector> */
+/* .box3{
+         color:blue;
+} */
+
+/* 
+<grouping selector>  */
+/* h4, p, h5{
+    background-color: rgb(255, 0, 102);
+    color:white;
+} */
+
+*{
+color:rgb(235, 0, 102);
+  }

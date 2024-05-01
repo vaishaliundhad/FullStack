@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table 3</title>
+     <style>
+        table,th,tr{
+            border:1px solid; 
+            padding:10px;
+        }
+     </style>   
+</head>
+
+<body>
+    <table>
+    <tr>
+        <th colspan="2">header column 1</th>
+        <th colspan="2">header column 2</th>
+        <th colspan="2">header column 3</th>
+        <th colspan="2">header column 4</th>
+    </tr>
+    <tr>
+        <th colspan="2">row 2 item 1</th>
+        <th colspan="2">row 2 item 2</th>
+        <th colspan="2">row 2:nested table1
+            <table>
+                <tr>
+                    <th>row 1 header</th>
+                    <th>items</th>
+                </tr> 
+                <tr>
+                    <th>row 2 header</th>
+                    <th>items</th>
+                </tr> 
+                <tr>
+                    <th>row 2 header</th>
+                    <th>items</th>
+                </tr> 
+
+            </table>    
+        </th>
+        <th>row 2 item 4 a socond line</th>
+    </tr>
+    <tr>
+        <th  colspan="2">row 3: nested table 2
+            <table>
+                <tr>
+                    <th>row 1 header</th>
+                    <th>items</th>
+                </tr> 
+                <tr>
+                    <th>row 2 header</th>
+                    <th>items</th>
+                </tr> 
+
+            </table>    
+        </th>
+        <th colspan="2">row 3 item 2</th>
+        <!-- <th>row 2:nested table 1</th> -->
+        <!-- <th colspan="2">row 3 item 3</th> -->
+    </tr>
+    </table>
+</body>
+</html>
