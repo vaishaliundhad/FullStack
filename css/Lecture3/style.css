@@ -1,0 +1,56 @@
+/* @import value */
+@import "importstyle.css";
+@import url("importstyle.css");
+
+/* cascade */
+
+h1{
+    color: brown;
+
+}
+h1{
+    color: blueviolet;
+}
+
+/* specity */
+
+h2{
+    color:rgb(255, 0, 153);
+}
+
+#specificity_id{
+    color:brown;
+}
+
+.specificity_class{
+    color:chartreuse;
+}
+
+
+  /*   inheritance */
+
+  .parent{
+    color:cadetblue;
+  } 
+
+
+  /* child */
+/* 
+  p{
+    color:red;
+  } */
+/* 
+  inheritance parent style take */
+
+  /* p{
+    color:inherit;
+  } */
+/* 
+
+  inheritance means default browser  style take */
+
+  p{
+    color:initial;
+  }
+
+ 
