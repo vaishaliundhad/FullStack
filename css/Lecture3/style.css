@@ -35,10 +35,10 @@ h2{
 
 
   /* child */
-/* 
-  p{
-    color:red;
-  } */
+
+ .parent  p{
+    color:rgb(0, 255, 76);
+  } 
 /* 
   inheritance parent style take */
 
