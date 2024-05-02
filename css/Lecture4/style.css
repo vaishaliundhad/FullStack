@@ -1,8 +1,8 @@
 /* color */
 .color{
     color:blueviolet;         /* using color name */
-    color:rgb(43, 255, 0);       /* using rgb value */
-    color:#3cb371;                      /* using hexadecimal */
+    color:rgb(0, 9, 25);       /* using rgb value */
+  color:#3cb371;                       /* using hexadecimal  */
 } 
 
 
@@ -108,7 +108,7 @@ background  color */
     width: 150px;
     border-top: 10px solid rgb(255, 0, 170);
     border-left: 15px double yellow;
-    border-bottom: 9px dotted rgb(23, 23, 169);
+    border-bottom: 9px dotted blue;
     border-right: 10px dashed  rgb(45, 160, 154);
     color: white;
 
