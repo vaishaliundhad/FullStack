@@ -29,23 +29,23 @@ h2{
 
   /*   inheritance */
 
-  .parent{
-    color:cadetblue;
+  .parent P{
+    color:rgb(6, 90, 59);
   } 
 
 
   /* child */
 
- .parent  p{
-    color:rgb(0, 255, 76);
+  p{
+    color:blue;
   } 
 /* 
   inheritance parent style take */
 
-  /* p{
+   p{
     color:inherit;
-  } */
-/* 
+  }  
+/*  
 
   inheritance means default browser  style take */
 
