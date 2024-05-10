@@ -43,12 +43,11 @@
 .doted{
     display: flex;
     align-items :center;
-    /* outline-style: outset; */
     outline-color: rgb(55, 0, 255);
     outline-width: 10px 10px 0px 10px;
     outline-offset: 0px;
     background-color:rgb(84, 27, 46);
-    /* outline: auto; */
+
 }
 .p2
 {
@@ -69,7 +68,7 @@
     border-width: 10px;
     padding: 20px;
     font-size: 30px;
-    font-family: serif;
+    font-family: Copperplate, Papyrus, fantasy;
     outline-style: double;
     color: white;
     outline-width: 20px;
@@ -90,6 +89,8 @@
     color: white;
     outline-width: 20px;
     margin-bottom: 50px;
+    font-family: "Sofia", sans-serif;
+
 
   
 
@@ -104,5 +105,14 @@
 h1{
     color: blue;
     background-color: cadetblue;
+}
+.main{
+    outline-style: groove;
+    outline-width: 20px;
+    color: rgb(164, 50, 124);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
      
