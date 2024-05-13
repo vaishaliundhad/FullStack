@@ -1,5 +1,5 @@
 body {
-
+    flex-wrap: wrap;
     border: 1px solid black;
 
     outline-width: 20px;
@@ -10,7 +10,8 @@ body {
     margin-bottom: 25px;
     outline-style: ridge;
     outline-color: rgb(48, 175, 210);
-    
+    /* outline-offset: 5px;  */
+
     /* background-color: lightcyan; */
 
 
@@ -79,6 +80,7 @@ body {
     border-top: 10px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 1000px;
+    /* border-radius: 50%; */
     text-align: center;
     background-color: blue;
 
@@ -303,7 +305,7 @@ body {
 
 .main1 {
     display: flex;
-    margin-top: 30px;
+    margin-top: 20px;
 
 }
 
@@ -359,3 +361,10 @@ body {
     outline-style:groove;
     outline-color: rgb(0, 179, 255);
 }  */
+h1{
+    text-align: center;
+    margin-top: 50px;
+    color: blue;
+    border: 1px solid black;
+    border-radius: 20px;
+}
