@@ -6,7 +6,7 @@
     /* background-color: black; */
     display: grid; 
     grid-template-columns: auto auto auto auto;
-     grid-template-rows: 200px 200px 200px 200px 200px 200px 200px ;
+     grid-template-rows: 120px 100px 100px 100px 100px 120px;
     grid-column-gap:7px ;
     grid-row-gap:7px ; 
 
