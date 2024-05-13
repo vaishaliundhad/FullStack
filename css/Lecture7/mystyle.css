@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*
+flex-wrap:warp;
+flex-wrap:nowarp;
+flex-wrap:warp-reverse;
+flex-direaction:row;
+flex-direaction:row-reverse;
+flex-direaction:col;
+flex-direaction:col-reverse;
+align-self:start;
+align-self:end;
+align-self:center;
+*/
+.parent{
+    height: 600px;
+    display: flex;
+    background-color:pink;
+    border: 1px solid black;
+    flex-wrap: wrap;
+    flex-wrap: nowrap;
+     flex-wrap: wrap-reverse;  
+    flex-direction: row;
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column;
+    flex-direction: column-reverse; 
+    /* justify-content: flex-start;
+    justify-content: flex-end; 
+    justify-content: center ;
+    /* justify-content: space-around;
+    justify-content: space-between;
+    align-items: flex-start; */ 
+    /* align-items: flex-end;
+    align-items: center; */
+    /* flex-flow: wrap row-reverse; */
+}
+
+
+.child1{
+    height: 100px;
+    width: 100px;
+    background-color: purple;
+     /* align-self: center; */
+     order: 2;
+    
+
+}
+.child2{
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    /* align-self: self-start; */
+    order: 3;
+
+}
+.child3{
+    height: 100px;
+    width: 100px;
+    background-color:orange;
+    /* align-self: self-end; */
+}
+.child4{
+    height: 100px;
+    width: 100px;
+    background-color:blue;
+}
+.child5{
+    height: 100px;
+    width: 100px;
+    background-color:green;
+}
+.child6{
+    height: 100px;
+    width: 100px;
+    background-color:brown;
+    order: 1;
+}
+
+.content-box{
+    height: 300px;
+    width: 300px;
+    border:1px solid black;
+    padding: 100px;
+    background-color: green;
+    box-sizing: content-box;
+    margin-top: 20px;
+    margin-left: 20px;
+    color:white;
+}
+
+.border-box{
+    height: 300px;
+    width: 300px;
+    border:1px solid black;
+    padding: 100px;
+    background-color:rgb(101, 7, 101);
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-left: 20px;
+    color:white;
+}

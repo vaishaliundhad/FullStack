@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+}
+/* oredr in flex */
+.child-1{
+    background-color:purple;
+    display: flex;
+}
+.child-2{
+   background-color: pink;
+   display: flex;
+}
+.text-1{
+    order: 2;
+}
+.image-1{
+    order: 1;
+}
+.text-2{
+    order:2;
+}
+.image-2{
+    order: 1;
+}
+
+
+/* 
+WHITE SPACE */
+
+.box{
+   width: 300px;
+   border: 2px solid black;
+   white-space: nowrap;
+
+}
+.pre{
+    width: 300px;
+    border: 2px solid black;
+    white-space: pre; 
+ }
+ .preline{
+    width: 300px;
+    border: 2px solid black;
+    white-space: pre-line; 
+ }
+ .prewrap{
+    width: 300px;
+    border: 2px solid black;
+    white-space: pre-wrap;  
+ }
+
+
+
+ .grid{
+    display: grid;
+    grid-template-columns:auto auto auto auto;
+}
