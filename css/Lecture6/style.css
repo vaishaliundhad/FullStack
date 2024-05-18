@@ -16,6 +16,7 @@
       /* flex-grow:5;  */
       flex-basis: 150px; 
       flex-shrink:1; 
+      order: 5;
   } 
   .box3{ 
       border: 1px solid orange; 
@@ -23,6 +24,7 @@
       /*flex-grow:1;*/ 
       flex-basis: 150px; 
       flex-shrink: 2; 
+      order: 6;
   } 
   .box4{ 
       border: 1px solid orange; 

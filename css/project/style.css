@@ -1,0 +1,412 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+ 
+}
+/* navbar */
+.header{
+/* top: 50px; */
+position: fixed;
+
+    width: 100%;
+}
+
+.nabar{
+/* position: fixed !important; */
+height: 100px;
+}
+.logo,img{
+    height: 60px;
+    width: 120px;
+    padding-left: 40px;
+    text-decoration: none;
+}
+.navdiv{
+ 
+    background-color:white;
+    display: flex;
+    text-decoration: none;
+    justify-content: space-between;
+    margin-top: 10px;
+    height: 100px;
+    color:black;
+    
+ 
+}
+
+
+.logo,h1{
+    display: flex;
+    margin-top: 20px;
+   
+}  
+/* h1{
+    margin-left: 5px;
+} */
+ .navdiv,ul,li{
+    display: flex;
+   text-decoration: none;
+    margin-top: 0px;
+
+}
+ul,li,a{
+    text-decoration: none;
+     display:flex; 
+     margin-left: 15px;
+      margin-top: 2px;
+     align-items: center;
+     margin-right: 10px;
+     color:black;
+    }
+ .button{
+        border-radius: 10px;
+        height: 50px;
+        width: 100px;
+        background-color:white;
+        color:black;
+     
+    }
+    .button:hover{
+        background-color: rgb(59, 161, 201);
+        color: white;
+    }
+    #dropdown{
+        height: 40px;
+        width: 100px;
+    } 
+    
+    /* .container{
+        padding: 15px 50px;
+        display: flex;
+        align-items: center;
+        padding: 20px;
+         justify-content: space-around; 
+        background-color:green;
+    
+    }
+    .logo{
+        margin-left: 5px;
+    }
+    ul{
+        list-style: none;
+    }
+    
+    li{
+        margin: 0 20px;
+    }
+    
+    .main-menu{
+        display: flex;
+        position: relative;    
+                        
+    }
+    .main{
+        justify-content: end;
+    }
+    
+    .sub-menu{
+        position: absolute;
+        background-color: aliceblue;
+        box-shadow: 2px 2px 4px 1px lightblue;
+        top:  50px;
+        opacity: 0;
+        visibility: hidden;
+        transition: 1s  ease;
+    }
+    
+    .dropdown:hover .sub-menu{
+        opacity: 1;
+        visibility: visible;
+    } */
+
+
+    /* image text */
+
+    .parent{
+        display: flex;
+        margin-bottom: 50px;
+       
+    }
+    .img1{
+        display: flex;
+        /* order: 1; */
+        height: 500px !important;
+        width: 735px;
+        padding-left: 200px;
+        background-color:#03002e;
+        
+    }
+    .text1,text2{
+        font-size: 32px;
+        background-color:#03002e;
+        color: white;
+        padding-left: 35px;
+        /* padding-bottom: 90%; */
+    }
+   .text3{
+    font-size: 19px;
+    padding-top: 30px;
+   }
+   .btn{
+    display: flex;
+    padding-top: 50px;
+   }
+   .btn1{
+    height: 45px;
+    width:200px;
+    padding-left: 4px;
+    color: white;
+     border: 1px solid rgb(48, 149, 189); 
+    background-color: rgb(43, 129, 163);
+    border-radius: 5px;
+   }
+   .btn1:hover{
+    background-color: white;
+    color:  rgb(43, 129, 163);
+   }
+
+   .btn2{
+     width: 120px;
+     height: 45px;
+     color: white;
+     border: 1px solid white;
+     background-color: #03002e;
+     border-radius: 5px;
+   }
+   .btn2:hover{
+    background-color: white;
+    color: black;
+   }
+.statis {
+    align-items: center !important;
+    padding-left: 20px;
+     font-size: 50px;
+     padding-top: 40px;
+     padding-bottom: 2px;
+    
+   }
+   .bold{
+    padding-bottom: 100px;
+    padding-top: 1px;
+   }
+.para{
+    padding-top: 40px;
+    text-align: center;
+}
+/* cards */
+.card{
+    display: flex;
+    margin-top: 60px;
+    justify-content: space-evenly;
+}
+.user{
+    border: 1px solid  grey;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    padding-top: 45px;
+    padding-right: 17px;
+    padding-left: 0px;
+}
+.number{
+    font-family: 'Merriweather';
+    color: #0087ab;
+    padding-left: 45px;
+}
+.home{
+    border: 1px solid grey;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    padding-top: 45px;
+    padding-right: 17px;
+    padding-left: 0px;
+}
+.number1{
+    font-family: 'Merriweather';
+    color: #0087ab;
+    padding-left: 55px;
+}
+.girl{
+    border: 1px solid grey;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    padding-top: 45px;
+    padding-right: 17px;
+    padding-left: 0px;
+}
+.number2{
+    font-family: 'Merriweather';
+    color: #0087ab;
+    padding-left: 46px;
+}
+.page{
+    border: 1px solid grey;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    padding-top: 45px;
+    padding-right: 17px;
+    padding-left: 0px;
+}
+.number3{
+    font-family: 'Merriweather';
+    color: #0087ab;
+    padding-left: 55px;
+}
+
+.line1{
+    padding-left: 45px;
+    color: grey;   
+}
+.line2{
+    padding-left: 55px;
+    color: grey;   
+}
+.line3{
+    padding-left: 55px;
+    color: grey;   
+}
+.line4{
+    padding-left: 55px;
+    color: rgb(197, 191, 191);   
+}
+
+p{
+    padding-top: 20px;
+    padding-left: 31px;
+}
+.courses{
+    padding-top: 20px;
+    padding-left: 55px;
+}
+.student{
+    padding-top: 20px;
+    padding-left: 50px;
+}
+.campus{
+    padding-top: 20px;
+    padding-left: 40px;
+}
+
+/* featured programms */
+.fea{
+    text-align: center;
+    padding-top: 100px;
+    color: black;
+    font-size: 50px;
+}
+.fealine{
+    text-align: center;
+}
+.p1{
+    text-align: center;
+    padding-bottom: 40px;
+}
+/* .card {
+    box-shadow:20px ;
+    transition: 0.3s;
+    width: 150px;
+    height: 120px;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .container2 {
+    padding: 2px 16px;
+  } */
+ .card1{
+    width: 200px;
+    height: 250px;
+    display: flex;
+    margin-left: 120px;
+ }
+ .antho{
+    border:1px solid black;
+    padding-left: 59px;
+    padding-right: 36px;
+    margin-left: 40px;
+    padding-top: 5px;
+    font-size: 20px;
+    padding-bottom: 20px;
+ 
+}
+.math{
+    border:1px solid black;
+    padding-left: 59px;
+    padding-right: 45px;
+    margin-left: 40px;
+    padding-top: 5px;
+    font-size: 20px;
+    padding-bottom: 20px;
+ 
+}
+.psy{
+    border:1px solid black;
+    padding-left: 69px;
+    padding-right: 45px;
+    margin-left: 40px;
+    padding-top: 5px;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.pro{
+    border:1px solid black;
+    padding-left: 55px;
+    padding-right: 45px;
+    margin-left: 40px;
+    padding-top: 5px;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.card2{
+    width: 200px;
+    height: 250px;
+    display: flex;
+    margin-left: 120px;
+    margin-top: 40px;
+ }
+ .copy{
+    border:1px solid black;
+    padding-left: 60px;
+    padding-right: 45px;
+    margin-left: 40px;
+    padding-top: 5px;
+    font-size: 20px;
+    padding-bottom: 20px;
+ 
+}
+.eco{
+    border:1px solid black;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-left: 40px;
+    padding-top: 5px;
+    font-size: 20px;
+    padding-bottom: 20px;
+ 
+}
+.phy{
+    border:1px solid black;
+    padding-left: 98px;
+    padding-right: 50px;
+    margin-left: 40px;
+    padding-top: 5px;
+    font-size: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+}
+.design{
+    border:1px solid black;
+    padding-left: 90px;
+    padding-right: 63px;
+    margin-left: 10px;
+    padding-top: 5px;
+    margin:40px;
+    font-size: 20px;
+    padding-bottom: 20px;
+}

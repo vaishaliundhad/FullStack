@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+
+}
+
+
+.container{
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 100px 200px 200px 100px ;
+    display: grid;
+    background-color: black;
+    grid-gap:10px;
+    margin-top: 20px;
+  
+}
+
+.items-1{
+    background-color: rgb(150, 114, 184);
+    grid-column: 1/4;
+    
+   
+}
+.items-2{
+    background-color:lightblue;
+    grid-row: 2/4;
+   
+}
+.items-3{
+    background-color: rgb(115, 115, 209);
+    grid-column: 2/4;
+   
+}
+.items-4{
+    background-color: rgb(131, 164, 131);
+   
+}
+.items-5{
+    background-color: rgb(168, 77, 77);
+   
+}
+.items-6{
+    background-color: rgb(159, 159, 26);
+    grid-column: 1/4;
+   
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    margin-top: 80px;
+    margin-left: 50px;
+    color: white;
+    margin-bottom: 50px;
+    box-shadow:-20px -20px 20px 20px  purple ;
+
+
+}
+
+
+.container1{
+    display: flex;
+}
+.box1{
+    border: 2px solid red;
+    padding: 30px 12px;
+    margin: 23px 12px;
+    background-color: burlywood;
+
+    box-shadow: -5px -10px 5px 10px blue;
+}
+
+.box2{
+    border: 2px solid red;
+    padding: 30px 12px;
+    margin: 23px 12px;
+    background-color: burlywood;
+    box-shadow: 10px 10px 5px 10px green;
+    opacity: 0.5;
+
+}
+
+.box3{
+    border: 2px solid red;
+    padding: 30px 12px;
+    margin: 23px 12px;
+    background-color: burlywood;
+    box-shadow:  10px  10px 5px 10px purple inset;
+    opacity: 0.5;
+}
+
+.box4{
+    border: 2px solid red;
+    padding: 30px 12px;
+    margin: 23px 12px; 
+    background-color: burlywood; 
+    box-shadow: 5px 5px  green, 10px 10px red;
+}
+
+h1{
+    text-transform: lowercase;
+}
+h2{
+    text-transform: uppercase;
+}
+.underline{
+    text-decoration-line:underline ;
+    text-decoration-color: greenyellow;
+    text-shadow: 2px 2px 2px  blue; 
+}
+.overline{
+    text-decoration-line:overline ;
+    text-decoration-color:blue ;
+    text-shadow: 5px 5px 5px red;
+}
+.line-through{
+    text-decoration-line: line-through;
+    text-decoration-color:red;
+    text-shadow: 5px 5px 5px green;
+  
+}
+.wordspacing{
+    word-spacing: 20px;
+    text-decoration-color: brown;
+    text-decoration-line: underline;
+    text-shadow: 5px 5px 5px grey;
+    
+}
+.letter-spacing{
+    text-decoration-line: line-through;
+    text-decoration-color: chocolate;
+    letter-spacing: 10px;
+}
+.capitilize{
+   text-transform: capitalize; 
+}
+.textend{
+    text-align: end;
+}

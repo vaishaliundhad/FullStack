@@ -1,0 +1,17 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.clip{
+    width: 60%;
+    height: 500px;
+    background-color:lightseagreen;
+    border: 5px dotted black;
+    margin: 50px auto;
+    padding: 100px;
+    background-clip: border-box;
+      background-clip: content-box;
+    background-clip: padding-box; 
+}
