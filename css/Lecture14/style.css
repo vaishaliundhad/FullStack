@@ -11,7 +11,35 @@
     border: 5px dotted black;
     margin: 50px auto;
     padding: 100px;
-    background-clip: border-box;
+    /* background-clip: border-box; */
       background-clip: content-box;
-    background-clip: padding-box; 
+    /* background-clip: padding-box;   */
 }
+.listing{
+  margin: auto;
+  height: 300px;
+  width: 500px;
+  background-color: blueviolet;
+  list-style-type:square;
+  list-style-image: url(img/image1.svg);
+  list-style-position: outside;
+  list-style-position: inside;
+}
+
+.width{
+  width: 800px;
+  height: 200px;
+  background-color: lightgreen;
+  border: 5px solid black;
+  margin: auto;
+}
+
+.min-width{
+  /* min-width: 500px; */
+  max-width: 600px;
+  height: 200px;
+  background-color: lightsalmon;
+  border: 5px solid black;
+  margin: auto;
+}
+
