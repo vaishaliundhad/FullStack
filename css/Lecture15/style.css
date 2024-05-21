@@ -1,0 +1,220 @@
+
+.path{
+    border: 1px solid black;
+    padding: 5px;
+    margin-top: 25px;
+
+}
+.path1{
+    border: 1px solid black;
+    padding: 5px;
+    margin-top: 25px;
+}
+
+.translatex{
+    height: 150px;
+    width: 150px;
+    background-color: greenyellow;
+}
+
+.path:hover .translatex{
+    transform: translatex(400px);
+}
+
+.translatey{
+    height: 150px;
+    width: 150px;
+    background-color: green;
+}
+.path1:hover .translatey{
+    transform: translatey(200px);
+}
+
+.path2{
+    border: 1px solid;
+    padding: 5px;
+    margin-top: 25px;
+}
+
+.translate{
+    height: 150px;
+    width: 150px;
+    background-color: blueviolet;
+    
+}
+.path2:hover .translate{
+    transform: translate(200px,100px);
+}
+
+
+/* 
+rotate */
+
+
+.path3{
+    border: 1px solid;
+    padding: 5px;
+    margin-top: 25px;
+}
+
+.rotatex{
+    height: 150px;
+    width: 150px;
+    background-color: lightcoral;
+}
+.path3:hover .rotatex{
+    transform: rotatex(180deg);
+}
+
+
+.path4{
+    border: 1px solid;
+    padding: 5px;
+    margin-top: 25px;
+}
+
+.rotatey{
+    height: 150px;
+    width: 150px;
+    background-color:lightseagreen;
+}
+.path4:hover .rotatey{
+    transform: rotatey(180deg);
+}
+
+
+/* scale */
+
+.path6{
+    border: 1px solid;
+    padding: 5px;
+    margin-top: 25px;
+}
+
+.scalex                                                                     {
+    height: 150px;
+    width: 150px;
+    background-color:lightgreen;
+}
+.path6:hover .scalex{
+    transform:scalex(6);
+}
+
+
+.path7{
+    border: 1px solid;
+    padding: 5px;
+    margin-top: 25px;
+}
+
+.scaley                                                                     {
+    height: 150px;
+    width: 150px;
+    background-color:lightslategray;
+}
+.path7:hover .scaley{
+    transform:scaley(3);
+}
+
+/* skew */
+
+
+.path8{
+    border: 1px solid;
+    padding: 5px;
+    margin-top: 25px;
+}
+
+.skewx                                                                     {
+    height: 150px;
+    width: 150px;
+    background-color:brown;
+}
+.path8:hover .skewx{
+    transform:skewx(200deg);
+}
+
+.path9{
+    border: 1px solid;
+    padding: 5px;
+    margin-top: 25px;
+}
+
+.skewy                                                                     {
+    height: 150px;
+    width: 150px;
+    background-color:rgb(155, 42, 165);
+}
+.path9:hover .skewy{
+    transform:skewy(220deg);
+}
+
+.path10{
+    border: 1px solid;
+    padding: 5px;
+    margin-top: 25px;
+}
+
+.skew                                                                     {
+    height: 150px;
+    width: 150px;
+    background-color:yellow;
+}
+.path10:hover .skew{
+    transform:skew(220deg,220deg);
+}
+
+
+/* transition */
+
+.path11{
+    border: 1px solid red;
+    padding: 40px;
+    margin-top: 20px;
+    
+}
+
+.image{
+    height: 100px;
+    width: 100px;
+    /* background-color: chartreuse; */
+  
+
+}
+
+
+img{
+    height: 200px;
+    width: 200px;
+    padding: 20px;
+
+}
+.path11:hover .image{
+    transform: scale(2);
+    transition: 2s;
+}
+
+.trasition{
+    height: 100px;
+    width: 100px;
+     background-color: chartreuse;
+     margin-top:70px; 
+  
+
+}
+.path11:hover .trasition{
+    width: 100px;
+    height: 100px;
+    transform: translate(900px);
+    /* transition-delay: 5s; */
+    /* transition-duration: 5s; */
+    /* transition-property: height; */
+    /* transition-timing-function: linear; */
+    /* transition-timing-function: ease;  */
+    /* transition-timing-function: ease-in;   */
+    /* transition-timing-function: ease-in-out; */
+    transition-timing-function: ease-out;
+
+}
+
+
