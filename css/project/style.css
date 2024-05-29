@@ -1,26 +1,31 @@
+
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+   
  
 }
 /* navbar */
-.header{
-/* top: 50px; */
-position: fixed;
+header{
 
-    width: 100%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+
+
 }
 
-.nabar{
-/* position: fixed !important; */
-height: 100px;
-}
+
 .logo,img{
     height: 60px;
     width: 120px;
     padding-left: 40px;
+    margin-top: 0px;
+    margin-bottom: 5px;
     text-decoration: none;
+   
 }
 .navdiv{
  
@@ -29,9 +34,9 @@ height: 100px;
     text-decoration: none;
     justify-content: space-between;
     margin-top: 10px;
-    height: 100px;
+    height: 80px;
     color:black;
-    
+ 
  
 }
 
@@ -137,12 +142,16 @@ ul,li,a{
         background-color:#03002e;
         
     }
-    .text1,text2{
+    .text1{
         font-size: 32px;
         background-color:#03002e;
         color: white;
         padding-left: 35px;
         /* padding-bottom: 90%; */
+        height: 500px;
+    }
+    .text2{
+        padding-top: 50px;
     }
    .text3{
     font-size: 19px;
@@ -179,13 +188,21 @@ ul,li,a{
     color: black;
    }
 .statis {
-    align-items: center !important;
+    text-align: center ;
     padding-left: 20px;
      font-size: 50px;
      padding-top: 40px;
      padding-bottom: 2px;
     
    }
+
+   .line{
+    height: 4px;
+    width: 90px;
+    background-color: black;
+     margin-left: 530px;
+   }
+   
    .bold{
     padding-bottom: 100px;
     padding-top: 1px;
@@ -258,20 +275,30 @@ ul,li,a{
 }
 
 .line1{
-    padding-left: 45px;
-    color: grey;   
+     margin-left: 50px;
+    height: 1px;
+    width: 40px;
+    background-color: grey;   
 }
 .line2{
-    padding-left: 55px;
-    color: grey;   
+    margin-left: 50px; 
+    height: 1px;
+    width: 40px;
+    background-color: grey;  
 }
 .line3{
-    padding-left: 55px;
-    color: grey;   
+    margin-left: 50px; 
+    height: 1px;
+    width: 40px;
+    background-color: grey;  
+ 
 }
 .line4{
-    padding-left: 55px;
-    color: rgb(197, 191, 191);   
+    margin-left: 60px; 
+    height: 1px;
+    width: 40px;
+    background-color: grey;  
+ 
 }
 
 p{
@@ -291,6 +318,11 @@ p{
     padding-left: 40px;
 }
 
+/* video */
+/* .vedio{
+    background-image: url("image/vedio.mp4");
+} */
+
 /* featured programms */
 .fea{
     text-align: center;
@@ -306,6 +338,7 @@ p{
     height: 4px;
     background-color: white;
     margin-top: 20px;
+    margin-left: 520px;
 }
 .p1{
     text-align: center;
@@ -469,6 +502,7 @@ p{
         border: 2px solid black;
         margin-top: 20px;
         margin-bottom: 50px;
+        /* background-color: red; */
 }
 .view1:hover{
     background-color:#03002e;
@@ -484,16 +518,34 @@ p{
     width: 360px;
     margin-right: 90px;
     margin-top: 20px;
+    /* background-color: red; */
 }
 
-.our2{
-    margin-left: 205px;
-    margin-top: 65px;
-    margin-bottom: 15px;
-    font-size: 45px;
-}
 .our1{
     display: flex;
+    /* background-color: red; */
+    width: 100%;
+}
+.our1subcontainer{
+    width: 70%;
+}
+.our2{
+    width: fit-content;
+    margin: auto;
+    margin-top: 4rem;
+
+    
+    margin-bottom: 15px;
+    font-size: 45px;
+    /* background-color: red; */
+}
+
+.our3{
+    /* margin-left: 20px; */
+    text-align: center;
+    color:rgb(169, 166, 166);
+    margin-bottom: 50px;
+    
 }
 .img2{
     height: 550px;
@@ -502,8 +554,12 @@ p{
 
   
 }
+.gridimg{
+    /* padding-top: 0.2rem; */
+}
 .Professors{
     display: inline-block;
+  
 }
 
 .pro1{
@@ -516,12 +572,6 @@ p{
     font-size: 1.125rem;
 }
 
-.our3{
-    margin-left: 20px;
-    color:rgb(169, 166, 166);
-    margin-bottom: 50px;
-    
-}
 .grid{
     grid-template-columns: auto auto;
     grid-template-rows: 150px;
@@ -768,28 +818,416 @@ p{
 /* student table */
 
 .table1{
-    align-items: center;
+    text-align: center;
     font-size: 2.6rem;
     margin-top: 75px;
     margin-bottom: 20px;
+    position: relative;
 }
 .table2{
    
     width: 85px;
     height: 4px;
     background-color: black;
-    text-align: center;
+     margin-left: 520px;
     margin-bottom: 25px;
 }
 
-table,th,tr{
-    border: 1px solid black;
-    border-collapse: collapse;
-    padding: 10px;
+
+
+.table3,th,tr{
+     border: 1px solid black    ;  
+   border-collapse: collapse; 
+    padding: 20px;
+    padding-left: 90px;
     text-align: center;
+    text-align: center;
+    margin-left: 140px;
+}
+.no{
+    padding-right: 90px;
+}
+.table4{
+    
+    padding: 100px;
+    background-color: #03002e;
+    color: white;
 }
 
-.table3{
+.no1,.no2,.no3,.no4,.no5{
+    padding: 10px; 
+    color: grey;
+}
+
+/* skill bar */
+
+.skill1{
+
+    font-size: 2.6rem;
+    margin-top: 75px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.skill2{
+   
+    width: 50px;
+    height: 4px;
+    background-color: black;
+    margin-bottom: 25px;
+    margin-left: 540px;
+}
+
+.prog{
+    margin-left: 310px;
+}
+
+progress{
+    height: 40px;
+    width: 500px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-left: 17px;
+     text-align: center;
+  
+}
+
+.progress1{
+  color: #656565;
+  margin-right:190px;
+  margin-left: 20px;
+  font-size: 20px;
+}
+.progress2{
+    color: #656565;
+    margin-left: 230px;
+    font-size: 20px;
+}
+
+.progress3{
+    margin-top: 20px;
+}
+
+.progress4{
+  color: #656565;
+  margin-right:160px;
+  margin-left: 20px;
+  font-size: 20px;
+}
+.progress5{
+    color: #656565;
+    margin-left: 190px;
+    font-size: 20px;
+}                                                                                                                                       
+
+.progress6{
+    margin-top: 20px;
+}
+
+.progress7{
+  color: #656565;
+  margin-right:190px;
+  font-size: 20px;
+  margin-left: 20px;
+}
+.progress8{
+    color: #656565;
+    margin-left: 200px;
+    font-size: 20px;
+}                                                                                                                                       
+
+.progress9{
+    margin-top: 20px;
+}
+
+.progress10{
+  color: #656565;
+  margin-right:90px;
+  font-size: 20px;
+  margin-left: 20px;
+}
+.progress11{
+    color: #656565;
+    margin-left: 200px;
+    font-size: 20px;
+}                                                                                                                                       
+
+
+/* fill in the form */
+
+.fill{
+    height: 900px;
+    width: 580px;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 0px;
+}
+.form{
+    display: flex;
+    background-color: #0a1c44;
+    margin-top: 50px;
+  
+}
+.form1{
+  
+    margin-top: 50px;
+
+}
+.fill1{
+     margin-top: 10px; 
+    margin-left: 140px;
+    color: white;
+}
+.fill2{
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin-left: 140px;
+    margin-top: 20px;
+
+}
+.fill3{
+    color:white;
+    margin-top: 30px;
+    margin-left: 140px;
+
+}
+
+.text4{
+    margin-top: 10px;
+    height: 50px;
+    width: 290px;
+    padding-left: 20px;
+   
+}
+
+
+.fill4{
+    color:white;
+    margin-top: 30px;
+    margin-left: 140px;
+   
+}
+
+
+.fill5{
+    height: 50px;
+    width: 135px;
+    color: white;
+    background-color:  #0087ab;
+    border: 1px solid  #0087ab;
+    border-radius: 5px;
+     margin-bottom: 0px;
+     margin-left: 0px;
+     margin-right: 0px;
+}
+.fill5:hover{
+    background-color: white;
+    color:#0087ab;
+
+
+}
+.university{
+    display: flex;
+    margin-top: 0px;
     
-    padding: 50px;
+}
+.uni{
+    position: relative;
+   margin-top: 30px;
+   height: 100px;
+   width: 180px;
+   margin-left: 54px;
+}
+.uni1{
+    position: relative;
+    margin-top: 10px;
+    margin-left: 130px;
+    
+}
+.uni2{
+    position: relative;
+    margin-left: 130px;
+    margin-top: 10px;
+    color: grey;
+}
+.uni3{
+    margin-top: 55px;
+    margin-left: 180px;
+}
+.uni4{
+    width: 45px;
+    height: 1px;
+    margin-left: 180px;
+    margin-top: 10px;
+    background-color:#0087ab;
+}
+
+
+ .fa-solid {
+    position: relative;
+    margin-top: 110px;
+    margin-right: 5px; 
+    margin-left: 0px; 
+    margin-bottom:  0px;  
+    text-align: start;
+    font-size: 25px;
+ 
+    right: 60px;
+
+}
+.location{
+    margin-top:10px;
+    position: relative;
+    margin-bottom: 0px;
+    font-size: 25px;
+ 
+}
+.email{
+    margin-top:0px;
+    position: relative;
+    right: 60px;
+    font-size: 25px;
+ 
+}
+.uni6{
+  
+   position: relative;
+   margin-top: 110px;
+   margin-right: 10px;
+  
+}
+.uni7{
+ 
+   position: relative;
+   padding-top: 100px;
+
+}
+.uni8{
+    
+   position: relative;
+   padding-top: 10px; 
+
+
+}
+.new1{
+    /* color:white; */
+    margin-top: 55px;
+    margin-left: 140px;
+
+}
+.new2{
+    width: 45px;
+    height: 1px;
+    margin-left: 140px;
+    margin-top: 10px;
+    background-color:#0087ab;
+   
+}
+.new3{
+    position: relative;
+    margin-left: 120px;
+}
+
+.new4{
+    position: relative;
+    height: 50px;
+    width: 200px;
+    margin-left: 150px;
+    margin-top: 30px;
+    padding-left: 20px;
+    margin-top: 0px;
+}
+
+.new5{
+    position: relative;
+    height: 50px;
+    width: 100px;
+    border: 1px solid #0087ab;
+    background-color:  #10b4e1;
+    color: white;
+}
+.new5:hover{
+    background-color: white;
+    color: #0087ab;
+}
+.twitter{
+    font-size: 30px;
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 60px;
+    margin-left:  430px;
+    color: grey;
+
+    
+}
+.twitter:hover{
+    color:rgb(202, 200, 200);
+}
+
+
+.facebook{
+    font-size: 30px;
+    position: relative;
+    margin-top: 20px;
+    margin-left:  10px;
+    color: grey;
+}
+.facebook:hover{
+    color:rgb(202, 200, 200);
+}
+
+
+.google{
+    font-size: 30px;
+    position: relative;
+    margin-top: 20px;
+    margin-left:  10px;
+    color: grey;
+}
+.google:hover{
+    color:rgb(202, 200, 200);
+}
+
+
+.ig{
+    font-size: 30px;
+    /* position: relative; */
+    margin-top: 25px;
+    margin-left:  10px;
+    color: grey;
+}
+.ig:hover{
+    color:rgb(202, 200, 200);
+}
+
+.sky{
+    font-size: 30px;
+    position: relative;
+    margin-top: 20px;
+    margin-left:  10px;
+    color: grey;
+}
+.sky:hover{
+    color:rgb(202, 200, 200);
+}
+
+
+
+/* google map */
+.iframe{
+
+   padding: 0%;
+   margin: 0%;
+}
+
+footer{
+    height: 80px;
+    width: 100%;
+    background-color: #1c8b9c;
+     text-align: center;
+     color: #fff;
+    padding: 0%;
+    margin: 0%;
+  padding-top: 10px;
+    
 }

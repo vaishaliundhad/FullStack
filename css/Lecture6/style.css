@@ -3,10 +3,11 @@
     width: 1300px; 
     height: 500px; 
     border: 1px solid black; 
+}
   .box1{ 
       border: 1px solid orange; 
       background-color: coral; 
-      /* flex-grow:2;  */
+      flex-grow:10; 
       flex-basis: 150px; 
       flex-shrink: 1; 
   } 
@@ -61,4 +62,4 @@
        flex-basis: 150px;  
       /* flex-shrink: 1;  */ 
   } 
-  }
+

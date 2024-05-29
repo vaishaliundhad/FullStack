@@ -11,8 +11,8 @@
     border: 5px dotted black;
     margin: 50px auto;
     padding: 100px;
-    /* background-clip: border-box; */
-      background-clip: content-box;
+    background-clip: border-box;
+      /* background-clip: content-box; */
     /* background-clip: padding-box;   */
 }
 .listing{

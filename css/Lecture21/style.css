@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:- border-box ;
+}
+
+a:link{
+    color: rgb(237, 111, 132);
+    background-color: blue;
+    font-size: 30px;
+}
+
+a:hover{
+    background-color: yellow;
+    color: red;
+}
+
+a:visited{
+    background-color: chartreuse;
+    color: chocolate;
+  
+}
+a:active{
+    background-color: aqua;
+    color: black;
+}
+
+:root{
+    color: cadetblue;
+    font-size: larger;
+}
+
+p:first-child{
+    color: lightslategray;
+    font-size: 15px;
+    background-color: lightblue;
+}
+p:last-child{
+    background-color:rgb(108, 108, 225);
+    color: red;
+
+}
+
+p:nth-child(2n){
+     /* color: lightcoral; */
+    /* background-color: bisque;  */
+}
+p:nth-child(2n+1)
+{
+   background-color:rgb(69, 123, 120); 
+    color: black; */
+}
+p:nth-child(odd){
+    /* background-color: lightcyan;
+    color:blue ; */
+}
+p:nth-child(even)
+{
+    /* background-color: rgb(172, 71, 172);
+    color: white; */
+}
+
+/* pesudo element */
+
+::selection{
+    color: blue;
+    background-color:yellow;
+}
+
+::first-line{
+    /* color: rgb(0, 191, 255); */
+    /* font-size: 20px; */
+}
+::first-letter{
+    /* color: red;
+    font-size: 30px; */
+}
+h1::before{
+    content:"**" ;
+  
+}
+h1::after{
+    content: "  good morning";
+
+}
+
+/* applay on list marker */
+
+li::marker{
+    /* color: red; */
+
+}

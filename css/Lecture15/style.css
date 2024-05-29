@@ -18,7 +18,9 @@
 }
 
 .path:hover .translatex{
-    transform: translatex(400px);
+    /* transform: translatex(400px); */
+    transform: translateX(400px);
+    transition: 2s;
 }
 
 .translatey{
@@ -27,7 +29,8 @@
     background-color: green;
 }
 .path1:hover .translatey{
-    transform: translatey(200px);
+    transform: translatey(400px);
+    transition: 2s;
 }
 
 .path2{
@@ -44,6 +47,7 @@
 }
 .path2:hover .translate{
     transform: translate(200px,100px);
+    transition: 2s;
 }
 
 
@@ -63,7 +67,8 @@ rotate */
     background-color: lightcoral;
 }
 .path3:hover .rotatex{
-    transform: rotatex(180deg);
+    transform: rotatex(380deg);
+    transition: 2s;
 }
 
 
@@ -79,7 +84,17 @@ rotate */
     background-color:lightseagreen;
 }
 .path4:hover .rotatey{
-    transform: rotatey(180deg);
+    transform: rotatey(360deg);
+    transition: 2s;
+}
+.rotate{
+    height: 150px;
+    width: 150px;
+    background-color:rgb(32, 32, 178);
+}
+.path5:hover .rotate{
+    transform: rotate(360deg);
+    transition: 2s;
 }
 
 
@@ -97,7 +112,8 @@ rotate */
     background-color:lightgreen;
 }
 .path6:hover .scalex{
-    transform:scalex(6);
+    transform:scalex(1.2);
+    transition: 2s;
 }
 
 
@@ -113,7 +129,8 @@ rotate */
     background-color:lightslategray;
 }
 .path7:hover .scaley{
-    transform:scaley(3);
+    transform:scale(1.2);
+    transition: 2s;
 }
 
 /* skew */
@@ -131,7 +148,8 @@ rotate */
     background-color:brown;
 }
 .path8:hover .skewx{
-    transform:skewx(200deg);
+    transform:skewx(360deg);
+    transition: 2s;
 }
 
 .path9{
@@ -147,6 +165,7 @@ rotate */
 }
 .path9:hover .skewy{
     transform:skewy(220deg);
+    transition: 2s;
 }
 
 .path10{
@@ -162,6 +181,7 @@ rotate */
 }
 .path10:hover .skew{
     transform:skew(220deg,220deg);
+    transition: 2s;
 }
 
 
@@ -213,7 +233,7 @@ img{
     /* transition-timing-function: ease;  */
     /* transition-timing-function: ease-in;   */
     /* transition-timing-function: ease-in-out; */
-    transition-timing-function: ease-out;
+    /* transition-timing-function: ease-out; */
 
 }
 

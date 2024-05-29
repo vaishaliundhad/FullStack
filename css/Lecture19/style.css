@@ -1,0 +1,23 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.mask img{
+    height: 500px;
+    width:100%;
+    mask-image: url("alpha-mask.png");
+      mask-repeat: no-repeat;  
+}
+
+.container img{
+ filter: blur(2px);
+ height: 500px;
+ width: 90%;
+  filter: none;
+ filter: brightness(300%);
+ filter: drop-shadow(10px 20px 5px red );
+ filter: grayscale(100%);
+      
+}

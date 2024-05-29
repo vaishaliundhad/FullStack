@@ -32,9 +32,10 @@ background  color */
     height:100px;
     width:100px;
     color: white;
-    border-width: 15px;
-    border-style:double;
-    border-color:rgba(245, 216, 0, 0.685);
+    /* border-width: 15px; */
+    border: 15px double rgba(245, 216, 0, 0.685);
+    /* border-style:double;
+    border-color:rgba(245, 216, 0, 0.685); */
     display: flex;  
 
 }
@@ -130,5 +131,5 @@ background  color */
     border: 10px solid blueviolet;
     border-radius: 25px;
     display: flex;  
-    outline-color: #d21356;
+    /* outline-color: #d21356; */
 }

@@ -1,0 +1,164 @@
+.box1{
+    height: 100px;
+    width: 100px;
+    background-color: chartreuse;
+    margin-bottom: 20px;
+    /* position: fixed; */
+    position: sticky;
+    top: 90px;
+    z-index: 6;
+
+  
+ 
+}
+.box2{
+    height: 100px;
+    width: 100px;
+    background-color:lightsalmon;
+    margin-bottom: 20px;
+    position: relative;
+     right: 20px;
+     top:20px;
+     z-index: 7;
+    
+     
+}
+.box3{
+    height: 100px;
+    width: 100px;
+    background-color: lightseagreen;
+    margin-bottom: 20px;
+     /* position: absolute; */
+   right: 40px; 
+    z-index: 9;
+}
+.container{
+    height: 700px;
+    background-color: khaki;
+    display: flex;
+}
+
+
+
+
+/* position sticky */
+
+.container1{
+  margin-top: 40px;
+  display: flex;
+  border: 3px dotted black;
+}
+
+.box4{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    margin: 10px;
+
+}
+
+.box5{
+    height: 100px;
+    width: 100px;
+    background-color:green;
+    margin: 10px;
+    position: static;
+    top: 20px;
+
+}
+.box6{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    margin: 10px;
+
+}
+.box7{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    margin: 10px;
+
+}
+
+/* position relative */
+
+.container2{
+  margin-top: 20px;
+  display: flex;
+  border: 3px dotted black;
+}
+
+.box8{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    margin: 10px;
+
+}
+
+.box9{
+    height: 100px;
+    width: 100px;
+    background-color:green;
+    margin: 10px;
+    position: relative;
+    left: 40px;
+    top: 20px;
+
+}
+.box10{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    margin: 10px;
+
+}
+.box11{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    margin: 10px;
+
+}
+/* position absolute */
+
+.container3{
+  margin-top: 20px;
+  display: flex;
+  border: 3px dotted black;
+}
+
+.box12{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    margin: 10px;
+
+}
+
+.box13{
+    height: 100px;
+    width: 100px;
+    background-color:green;
+    margin: 10px;
+    position: absolute; 
+    left: 30px;
+    top: 480px;
+    
+
+}
+.box14{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    margin: 10px;
+
+}
+.box15{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    margin: 10px;
+
+}

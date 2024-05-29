@@ -1,0 +1,62 @@
+*{
+    /* margin: 0%; */
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.icon{
+    margin-top: 50px;
+    margin-left: 30px;
+    border: 1px solid black;
+    height: 75px;
+    width: 600px;
+    justify-content: center;
+   outline: 1px solid  black;
+   margin-bottom: 50px;
+   text-decoration: none;
+   outline: 2px solid red;
+
+  
+}
+.icon , a,i{
+    text-decoration: none;
+}
+
+.fa-light  {
+    border: 1px solid black;
+    border-radius: 50%;
+    font-size: 20px;
+    height: 20px;
+    width: 20px;
+   padding: 20px;
+   color: white;
+   background-color: lightsalmon;
+
+ 
+
+}
+
+.fa-solid{
+    border: 1px solid black;
+    border-radius: 50%;
+    font-size: 20px;
+    height:60px;
+    width: 60px;
+   padding: 20px;
+   text-align: center;
+   color: black;
+  margin: 5px;
+}
+.three{
+    border: 1px solid black;
+    border-radius: 50%;
+    font-size: 20px;
+    height:60px;
+    width: 60px;
+   padding: 20px;
+   text-align: center;
+   color: white;
+  margin: 5px;
+  background-color: blue;
+}
+
