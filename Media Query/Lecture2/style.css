@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 30px;
+    padding: 10px;
+    border: 10px dotted tomato;
+  }
+  
+  /* unit em */
+  h1 {
+    text-align: center;
+    color: blue;
+    font-size: 30px;
+    text-decoration: dotted;
+    padding-top: 10px;
+  }
+  
+  .em-p {
+    font-size: 16px;
+    line-height: 2em;
+  }
+  
+  .em {
+    font-size: 30px;
+    border: 1px solid black;
+  }
+  
+  .span-em {
+    color: red;
+    font-size: 0.5em;
+  }
+  
+  
+  
+  
+  /* unit rem */
+  .em-p {
+    font-size: 16px;
+  }
+  
+  .rem {
+    font-size: 2rem;
+    border: 1px solid black;
+  }

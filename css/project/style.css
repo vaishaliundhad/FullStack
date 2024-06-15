@@ -76,54 +76,7 @@ ul,li,a{
         background-color: rgb(59, 161, 201);
         color: white;
     }
-    #dropdown{
-        height: 40px;
-        width: 100px;
-    } 
-    
-    /* .container{
-        padding: 15px 50px;
-        display: flex;
-        align-items: center;
-        padding: 20px;
-         justify-content: space-around; 
-        background-color:green;
-    
-    }
-    .logo{
-        margin-left: 5px;
-    }
-    ul{
-        list-style: none;
-    }
-    
-    li{
-        margin: 0 20px;
-    }
-    
-    .main-menu{
-        display: flex;
-        position: relative;    
-                        
-    }
-    .main{
-        justify-content: end;
-    }
-    
-    .sub-menu{
-        position: absolute;
-        background-color: aliceblue;
-        box-shadow: 2px 2px 4px 1px lightblue;
-        top:  50px;
-        opacity: 0;
-        visibility: hidden;
-        transition: 1s  ease;
-    }
-    
-    .dropdown:hover .sub-menu{
-        opacity: 1;
-        visibility: visible;
-    } */
+   
 
 
     /* image text */
@@ -323,6 +276,8 @@ p{
     background-image: url("image/vedio.mp4");
 } */
 
+
+
 /* featured programms */
 .fea{
     text-align: center;
@@ -454,6 +409,7 @@ p{
     /* margin:40px; */
     font-size: 20px;
     padding-bottom: 20px;
+    
     background-color: white;
     color: #0087ab;
     /* font-family: 'Merriweather', serif; */
@@ -1228,6 +1184,6 @@ footer{
      color: #fff;
     padding: 0%;
     margin: 0%;
-  padding-top: 10px;
+    padding-top: 10px;
     
 }
