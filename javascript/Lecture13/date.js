@@ -29,15 +29,16 @@
 // console.log(date.getMilliseconds());
 // console.log(date.getTime());
 
-// let  date=new Date();
+let  date=new Date();
 // console.log(date);
-// console.log(date.setFullYear(2033));
-// console.log(date.setMonth());
-// console.log(date.setDate());
-// console.log(date.setDay());
-// console.log(date.setHours());
-// console.log(date.setMinutes());
-// console.log(date.setSeconds());
-// console.log(date.setMilliseconds());
-// console.log(date.setTime());
+// (date.setFullYear(2033));
+// (date.setMonth(2));
+// (date.setDate(15));
+// (date.setHours(5));
+// (date.setMinutes(30));
+// (date.setSeconds(60));
+// (date.setMilliseconds(100));
+(date.setTime(299000));
+
+console.log(date)
 
