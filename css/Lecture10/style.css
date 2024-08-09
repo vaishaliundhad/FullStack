@@ -6,8 +6,8 @@
     /* background-color: black; */
     display: grid; 
     grid-template-columns: auto auto auto auto;
-     grid-template-rows: 120px 100px 100px 100px 100px 100px;
-    grid-column-gap:7px ;
+    grid-template-rows: 120px 100px 100px 100px 100px 100px;
+    grid-column-gap:10px ;
     grid-row-gap:7px ; 
 
 }
@@ -27,6 +27,7 @@
 .items4{
     background-color:rgb(199, 147, 199);
     grid-row:2/4;
+  
  
 }
 .items5{

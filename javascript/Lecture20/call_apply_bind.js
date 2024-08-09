@@ -15,12 +15,12 @@
 //     age:21
 // };
 
-// let data1={
+// let data1 ={
 //      name:'janu',
 //      age:20
 // };
 
-// console.log(person.sayHello.call(data1, 'bombay'));
+// console.log(person.sayHello.call(data, 'bombay'));
 
 
 

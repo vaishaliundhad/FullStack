@@ -27,16 +27,16 @@ align-self:center;
      /* flex-direction: row-reverse;  */
      /* flex-direction: column; */
     /* flex-direction: column-reverse;  */
-      /* justify-content: flex-start;  */
-    /* justify-content: flex-end;  */
-    /* justify-content: center ; */
-     /* justify-content: space-around; */
-    /* justify-content: space-between; */
-    /* justify-content: space-evenly;  */
-    /* align-items: flex-start;  */
-     /* align-items: flex-end; */
-    /* align-items: center;  */
-     flex-flow: wrap row-reverse;  
+      /* justify-content: flex-start; 
+    justify-content: flex-end; 
+    justify-content: center ;
+     justify-content: space-around;
+    justify-content: space-between;
+    justify-content: space-evenly;  */
+    align-items: flex-start; 
+     align-items: flex-end;
+    align-items: cen    ter; 
+     /* flex-flow: wrap column-reverse;   */
      
 }
 

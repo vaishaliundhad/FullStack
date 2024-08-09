@@ -125,17 +125,17 @@
  
 /* 7. Write a program to check if a string is a palindrome. */ 
 
-// let palindrome = (str) =>{
-//     for(let i = 0;i<str.length/2 ; i++)
-//     {
-//         if(str[i]!==str[str.length-1-i]){
-//             console.log("not palindrome")
-//         }
-//         else{
-//             console.log("palindrome");
-//         }
-//     }
-// }
+let palindrome = (str) =>{
+    for(let i = 0;   i<str.length/2 ; i++)
+    {
+        if(str[i]!==str[str.length-1-i]){
+            console.log("not palindrome")
+        }
+        else{
+            console.log("palindrome");
+        }
+    }
+}
 
 /* 8. Write a program to find the sum of the first n natural numbers. */
 
