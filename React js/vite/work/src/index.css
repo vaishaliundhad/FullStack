@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+  .heading{
+    @apply bg-purple-500 p-5 text-center text-3xl
+  }
+}
