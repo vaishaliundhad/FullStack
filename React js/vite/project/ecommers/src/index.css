@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active{
+  color:black;
+  text-decoration:underine;
+}
+.silk{
+  background-color:black;
+  color:white;
+  text-align:center;
+}
+.span{
+  color:#2cfc03;
+  text-decoration:underline;
+  text-color:#2cfc03;
+}
+
+/*   
+body{
+  background-color:red;
+} */
+/*Home section*/
+
+
+

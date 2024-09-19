@@ -1,0 +1,35 @@
+.scrollsection{ 
+    display: flex; 
+    /* justify-content: center;  */
+    background-color: #93f859; 
+    overflow: hidden; 
+    text-wrap: nowrap; 
+  } 
+   
+  .scrollsection div { 
+    display: flex; 
+    /* align-items: center;  */
+    padding: 20px 0px; 
+    font-weight: 500; 
+    animation: rightToLeft 10000ms linear infinite; 
+  } 
+  .scrollsection:hover div { 
+    animation-play-state: paused; 
+  } 
+  .scrollsection div p { 
+    margin: 0px 25px; 
+    font-size:12px; 
+  } 
+  .scrollsection div span{ 
+    font-size:10px; 
+  } 
+ 
+   
+  @keyframes rightToLeft { 
+    0% { 
+      transform: translateX(0); 
+    } 
+    100% { 
+      transform: translateX(-100%); 
+    } 
+  }

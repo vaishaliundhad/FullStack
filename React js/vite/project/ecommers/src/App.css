@@ -1,0 +1,131 @@
+
+/* body{
+    background-color:black;
+} */
+ :root{
+    --primary-color:#93f859;
+ }
+.mainslider1,.mainslider2,.mainslider3{
+    position:relative;
+
+}
+.slide1,.slide2,.slide3{
+    position:absolute;
+    top:100px;
+    left:60px;
+}
+.slick-dots{
+    bottom: 20px !important;
+    
+
+}
+
+/* media query */
+
+@media (max-width: 1440px) {
+    .text {
+      font-size:60px;
+    }
+  }
+
+/* shopbycategory */
+.mainshop{
+   margin:20px;
+}
+.container{
+    margin:20px;
+  
+}
+.cardSection{
+    position:relative;  
+    top:10px;
+}
+
+.cardinfo{
+    position:absolute;
+    bottom:70px;
+    margin-left:10px;
+}
+
+.shopicons{
+    dislay:none;    
+}
+
+.shopbycategorybtn{
+  /* position:absolute; */
+  height:40px;
+  width:90px; 
+  margin-left:20px;
+  margin-top:130px;
+  /* margin-bottom:20px; */
+  background-color:white;
+}
+.shopbycategorybtn:hover{
+    height:40px;
+    width:120px; 
+    background-color:black;
+    color:white;
+}
+/* shop catagory */
+
+/* 
+.active{
+    color:black;
+    text-decoration:underline;
+} */
+.active:hover{
+    color:black;
+    text-decoration:underline;
+}
+
+.btn:hover{
+    background-image: linear-gradient(90deg, red, yellow);
+    tansition-delay:2s;
+   transition: width 2s;
+}
+
+
+/* Discount*/
+
+/* .shopbtn{
+    background-color:#93f859;
+}
+
+.shopbtn:hover{
+    background-color:#93f859;
+
+} */
+
+//shopcollection  //
+
+.shopcollection{
+    /* background-color:purple; */
+    display: flex !important;
+}
+
+
+.shopcollectionmain{
+   height:500px;
+   width:800px;  
+}
+
+.shopcollectionimg{
+    height:500px;
+    width:500px;
+}
+
+
+// login css //
+
+.login{
+    width:1000%;
+}
+
+
+/* responsive */
+
+/* @media only screen and (max-width: 600px) {
+     checkout{
+      text-center;
+    }
+  } */
