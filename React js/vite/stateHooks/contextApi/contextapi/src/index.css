@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+img,video{
+    max-width:20%;
+    hight:auto;
+    position:relative;
+    
+}
+
+.card1{
+    position:absolute;
+    top:20px;
+}

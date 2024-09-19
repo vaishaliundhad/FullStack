@@ -22,7 +22,7 @@ const List = createBrowserRouter([
         {
             path:'login',
             element:<Login/>
-        }
+        },
         {
             path:'shop',
             element:<Shop/>

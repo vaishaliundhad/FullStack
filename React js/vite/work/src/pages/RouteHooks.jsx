@@ -5,7 +5,7 @@ const RouteHooks = () => {
     const navigate=useNavigate()
   return (
     <div>
-      <button onClick={() => navigate('/login')}>Click from Home</button>
+      <button onClick={() => navigate('/')}>Click from Home</button>
     </div>
   )
 }
