@@ -38,7 +38,7 @@ import React from "react";
 const Login = () => {
     return (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
-            <div className="bg-white w-full max-w-lg mx-4 p-6 rounded-lg shadow-lg relative">
+            <div className="bg-white w-full max-w-lg mx-4 p-8  rounded-lg shadow-lg relative">
                 <button className="absolute top-4 right-4 text-black text-2xl font-bold">
                     &times;
                 </button>
@@ -68,26 +68,27 @@ const Login = () => {
                     </div>
 
                     <div className="mb-6">
-                        <a href="#" className="text-sm text-gray-500 hover:text-gray-700">
+                        <a href="#" className="text-sm text-gray-500 hover:text-gray-700 underline hover:text-lime-500">
                             Forgot your password?
                         </a>
                     </div>
 
                     <div className=" flex  gap-x-3 text justify-around">
-                        <button className="px-5 h-12  w-52 text-sm bg-black text-white py-4 rounded font-semibold hover:bg-gray-800">
+                        <button className="px-10 h-12  w-52 text-sm bg-black text-white py-4 rounded font-semibold hover:bg-gray-800">
                             Login
                         </button>
                         {/* <button className='ml-auto w-4/6  bg-gray-800  text-white p-2 rounded font-semibold hover:bg-gray-900 mt-6' type="submit">Log In</button> */}
 
 
-                        <div className="flex justify-between items-center underline gap-x-0">
-                            <p className="text-sm text-gray-700 hover:text-gray-900 font-semibold ">New customer?</p>
+                        <div className="flex justify-between items-center underline gap-x-0 ">
+                            <a href="#" className="text-sm text-gray-700 hover:text-gray-900 font-semibold hover:text-lime-500">New customer?
                             <a
                                 href="#"
-                                className="text-sm text-gray-700 hover:text-gray-900 font-semibold"
+                                className="text-sm text-gray-700 hover:text-gray-900 font-semibold hover:text-lime-500"
                             >
-                                Create your account  &rarr;
-                            </a>
+                                Create your account
+                               
+                            </a></a>
                         </div>
                     </div>
                 </form>

@@ -13,6 +13,8 @@ const Checkout = () => {
 
 
             <div className='flex'>
+                {/* Billing Details */}
+                
                 <div>
                     <h1 className='ml-10 text-4xl'>Billing details</h1>
                     <div className='flex'>
@@ -55,6 +57,8 @@ const Checkout = () => {
 
                 </div>
 
+            {/* {*your order*} */}
+
                 <div class="py-4 ml-0 px-1 md:px-6 2xl:px-20 2xl:container 2xl:mx-auto order  mt-0 overflow-hidden rounded ">
                     <div class="flex justify-start item-start space-y-2 flex-col ">
                         <h1 class="text-sm text-black lg:text-3xl font-semibold leading-7 lg:leading-9 ">Your Order</h1>
@@ -66,9 +70,10 @@ const Checkout = () => {
                             <div class="flex flex-col justify-start items-start  bg-gray-50 px-4 py-4 md:py-6 md:p-6 xl:p-8 w-full">
 
                                 <div class="mt-4 md:mt-6 flex flex-col md:flex-row justify-start items-start md:items-center md:space-x-6 xl:space-x-8 w-full">
-
+                                
+                                {/* {image1} */}
                                     <div class="pb-4 md:pb-8 w-full md:w-40">
-                                        <img class="w-full hidden md:block h-14 w-14 border rounded-s" src={asset12} alt="tshrt" />
+                                        <img class="w-full hidden md:block h-14 w-12 border rounded-s ml-4" src={asset12} alt="tshrt" />
                                     </div>
                                     <div class="border-b border-gray-200 md:flex-row flex-col flex justify-between items-start w-full pb-8 md:space-y-0 ml-2">
                                         <div class="mr-6">
@@ -81,11 +86,13 @@ const Checkout = () => {
                                     </div>
 
                                 </div>
+                                
+                                  {/* {image2} */}
 
                                 <div class="mt-4 md:mt-6 flex flex-col md:flex-row justify-start items-start md:items-center md:space-x-6 xl:space-x-8 w-full">
 
                                     <div class="pb-4 md:pb-8 w-full md:w-40">
-                                        <img class="w-full hidden md:block h-14 w-14 border rounded-s" src={asset13} alt="sweater" />
+                                        <img class="w-full hidden md:block h-14 w-12 border rounded-s ml-4" src={asset13} alt="sweater" />
                                     </div>
                                     <div class="border-b border-gray-200 md:flex-row flex-col flex justify-between items-start w-full pb-8 md:space-y-0 ml-2">
                                         <div class="mr-6">
@@ -98,10 +105,11 @@ const Checkout = () => {
                                     </div>
                                 </div>
 
+                              {/* {image3} */}
                                 <div class="mt-4 md:mt-6 flex flex-col md:flex-row justify-start items-start md:items-center md:space-x-6 xl:space-x-8 w-full">
 
                                     <div class="pb-4 md:pb-8 w-full md:w-40 ">
-                                        <img class="w-full hidden md:block h-14 w-14 border rounded-s" src={asset14} alt="tshrt" />
+                                        <img class="w-full hidden md:block h-14 w-12 ml-4 border rounded-s" src={asset14} alt="tshrt" />
                                     </div>
                                     <div class="border-b border-gray-200 md:flex-row flex-col flex justify-between items-start w-full pb-8 md:space-y-0 ml-2">
                                         <div class="mr-6">
@@ -115,10 +123,11 @@ const Checkout = () => {
 
                                 </div>
 
+                              {/* {image4} */}
                                 <div class="mt-4 md:mt-6 flex flex-col md:flex-row justify-start items-start md:items-center md:space-x-6 xl:space-x-8 w-full">
 
                                     <div class="pb-4 md:pb-8 w-full md:w-40">
-                                        <img class="w-full hidden md:block h-14 w-14 border rounded-s" src={asset15} alt="tshir" />
+                                        <img class="w-full hidden md:block h-14 w-12 ml-4 border rounded-s" src={asset15} alt="tshir" />
                                     </div>
                                     <div class="border-b border-gray-200 md:flex-row flex-col flex justify-between items-start w-full pb-8 md:space-y-0 ml-2">
                                         <div class="mr-6">
@@ -131,6 +140,7 @@ const Checkout = () => {
                                     </div>
 
                                 </div>
+                            {/* Discount */}
 
                                 <div className='flex mt-4'>
                                     <div>
@@ -140,6 +150,7 @@ const Checkout = () => {
                                         <input type="button" value="Apply" className='px-4 text-xs py-3 bg-black text-white ml-4 rounded-sm' />
                                     </div>
                                 </div>
+                            {/* Total */}
 
                                 <div className='flex mt-5 font-semibold'>
                                     <div>
@@ -149,6 +160,8 @@ const Checkout = () => {
                                         <h1 className='text-lg '>$122.00</h1>
                                     </div>
                                 </div>
+                            
+                            {/* radio btn */}
 
                                 <div className='mt-5'>
                                     <div>
@@ -162,6 +175,7 @@ const Checkout = () => {
 
 
                                 </div>
+                            {/* checkout btn */}
 
                                 <div className='flex mt-3'>
                                     <div className='text-neutral-500  text-sm'>
@@ -175,6 +189,8 @@ const Checkout = () => {
                                                 <button className='ml-1'><u>terms and conditions.</u></button>
                                             </label>
                                         </div>
+                                        {/* place order btn */}
+                                        
                                         <div>
                                             <input type="button" value="Place order" className='px-44 mt-10 text-xs py-3 bg-black text-white ml-4 rounded-sm mr-16' />
                                             {/* <button className='px-44 mt-10 text-xs py-3 bg-black text-white ml-4 rounded-sm mr-16'>Place  order</button> */}

@@ -1,0 +1,16 @@
+/* .ZoomSlider .splide__slide img {
+    width: 100%;
+    object-fit: cover !important;
+    height: auto; /* Ensure images fit properly */
+    background-color: purple;
+  }
+  
+  .ZoomSlider {
+    overflow: hidden;
+  }
+  
+  .ImageZoomOverLayBox {
+    background-color: rgba(255, 255, 255, 0.104);
+    border-color: 1px solid black !important;
+    @apply rounded-xl;
+  } */

@@ -3,30 +3,22 @@ import asset11 from '../assets/asset11.jpg'
 
 const ShopCollection = () => {
     return (
-        <div class="max-w-md mx-auto  rounded-xl shadow-md overflow-hidden md:max-w-2xl shopcollectionmain" style={{ backgroundColor: "var(--primary-color)" }}>
-            <div class="md:flex ">
-                <div class="shopcollectionimg ">
-                    {/* <img className="h-48 w-full object-cover md:h-full md:w-48" src="https://loremflickr.com/g/320/240/team"> */}
-                    <img src={asset11} className=' md:h-full md:w-48 shopcollectionimg' alt="" />
-                </div>
-                <div class="p-70 w-4">
-                    <div class="uppercase  text-sm text-black-500 font-bold">ULTIMATE APPLE ACCESSORY</div>
-                    <h1 className='  text-5xl '>60% Discount</h1>
-                    <p className='text-gray-700'>Find the latest and greatest gadgets to enhance your electronic devices</p>
-                    <span><b>Hungry up !</b>Deals end in :</span>
-                    <div className='flex'>
-                        <div>
-                            <button className=' rounded-3xl bg-black text-white h-10 w-32'>Shop now</button>
-                        </div>
-                        <div>
-                            <button className=' rounded-3xl bg-black text-white h-10 w-32'>hhjkkkkkkkkkkkkkk</button>
-                        </div>
-
-                    </div>
-
-                </div>
+        <div>
+        <section className='container-section'>
+          <div className='grid grid-cols-2'>
+            <div>
+              <img src={asset11} alt="" className='h-auto w-auto' />
             </div>
-        </div>
+            <div style={{ backgroundColor: "var(--primary-color)" }} className='pt-20 pl-20'>
+              <div className='text-[14px] font-bold leading-4'>ULTIMATE APPLE ACCESSORY.</div>
+              <div className='text-[52px] mt-3'>60% Discount</div>
+              <p className='text-[16px] mt-6 text-gray-500'>Find the latest and greatest gadgets to enhance your electronic devices.</p>
+              <div className='mt-6'><strong className='font-black'>Hungry Up !</strong> Deals end in:</div>
+              <button className='bg-black mt-8 text-white rounded-full text-[14px] font-medium px-6 py-3'>Shop now</button>
+            </div>
+          </div>
+        </section>
+      </div>
     )
 }
 
