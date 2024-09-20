@@ -37,7 +37,7 @@ import React from "react";
 
 const Login = () => {
     return (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+        <div className="fixed inset-0 bg-black bg-opacity-50  flex justify-center items-center">
             <div className="bg-white w-full max-w-lg mx-4 p-8  rounded-lg shadow-lg relative">
                 <button className="absolute top-4 right-4 text-black text-2xl font-bold">
                     &times;

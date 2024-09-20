@@ -30,7 +30,7 @@ import asset10 from '../assets/asset10.jpg'
 
 const Card = () => {
   return (
-    <div className='flex container-section gap-7 max-md:block m-10'>
+    <div className='flex container-section gap-7 max-md:block m-10 overflow-hidden'>
         <div className='relative'>
           <img src={asset10} className="h-[649px] w-[683px] rounded-2xl" alt="" />
           <div className='absolute bottom-3 left-1/4 right-1/4 text-center'>

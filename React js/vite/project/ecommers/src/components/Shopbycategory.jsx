@@ -8,9 +8,9 @@ import { MdArrowOutward } from "react-icons/md";
 
 const Shopbycategory = () => {
   return (
-    <div className='mainshop justify-between'>
+    <div className='mainshop justify-between overflow-hidden'>
       <div>
-        <h1 className='text-4xl m-20 10'>Shop by category.</h1>
+        <h1 className='text-4xl m-10 10'>Shop by category.</h1>
       </div>
 
       <div className='container flex justify-evenly gap-4 '>
@@ -24,8 +24,8 @@ const Shopbycategory = () => {
             <h3>Screen protection</h3>
             <p className='mt-2 text-xs'>6 items</p>
 
-            <div>
-              <button className=' rounded-3xl shopbycategorybtn'>Shop now <div className='shopicons'><MdArrowOutward /></div></button>
+            <div className='mb-0 '>
+              <button className=' rounded-3xl shopbycategorybtn   '>Shop now <div className='shopicons'></div></button>
             </div>
           </div>
 

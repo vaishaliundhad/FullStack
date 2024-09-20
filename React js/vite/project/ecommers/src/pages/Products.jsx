@@ -1,10 +1,10 @@
 import React from 'react'
-// import Zoomsection from '../helpers/Zoomsection'
+import Zoomsection from '../helpers/Zoomsection'
 
 const Products = () => {
   return (
     <div>
-      {/* <Zoomsection/> */}
+      <Zoomsection/>
     </div>
   )
 }

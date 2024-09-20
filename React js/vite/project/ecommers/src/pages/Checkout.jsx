@@ -30,27 +30,27 @@ const Checkout = () => {
                     <div className='w-full'>
                         <div class="mt-1 ml-10" >
                             <label for="city" class="block text-gray-700 dark:text-black mb-1">Country/region*</label>
-                            <input type="city" id="city" class="w-7/12 rounded border py-2 px-44 mt-1"></input>
+                            <input type="city" id="city" class="w-full rounded border py-2 px-44 mt-1"></input>
                         </div>
                         <div class="mt-7 ml-10" >
                             <label for="city" class="block text-gray-700 dark:text-black mb-1">Town/City*</label>
-                            <input type="city" id="city" class="w-7/12 rounded border py-2 px-3mt-1 "></input>
+                            <input type="city" id="city" class="w-full rounded border py-2 px-3mt-1 "></input>
                         </div>
                         <div class="mt-7 ml-10" >
                             <label for="address" class="block text-gray-700 dark:text-black mb-1">Address*</label>
-                            <input type="text" id="address" class="w-7/12 rounded border py-2 px-3 mt-1 "></input>
+                            <input type="text" id="address" class="w-full rounded border py-2 px-3 mt-1 "></input>
                         </div>
                         <div class="mt-7 ml-10" >
                             <label for="number" class="block text-gray-700 dark:text-black mb-1">Phone Number*</label>
-                            <input type="number" id="number" class="w-7/12 rounded border py-2 px-3 mt-1 "></input>
+                            <input type="number" id="number" class="w-full rounded border py-2 px-3 mt-1 "></input>
                         </div>
                         <div class="mt-7 ml-10" >
                             <label for="email" class="block text-gray-700 dark:text-black mb-1">Email*</label>
-                            <input type="email" id="email" class="w-7/12 rounded border py-2 px-3 mt-1"></input>
+                            <input type="email" id="email" class="w-full rounded border py-2 px-3 mt-1"></input>
                         </div>
                         <div class="mt-7 ml-10" >
                             <label for="optional" class="block text-gray-700 dark:text-black mb-1">Order notes (optional)*</label>
-                            <input type="text" id="optional" class="w-7/12 rounded border py-9 px-3 mt-1 "></input>
+                            <input type="text" id="optional" class="w-full  rounded border py-9 px-3 mt-1 "></input>
                         </div>
 
                     </div>

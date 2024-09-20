@@ -1,4 +1,7 @@
-/* .ZoomSlider .splide__slide img {
+/* import '@splidejs/react-splide/css' */
+/* import { Splide, SplideTrack, SplideSlide } from '@splidejs/react-splide' */
+
+.ZoomSlider .splide__slide img {
     width: 100%;
     object-fit: cover !important;
     height: auto; /* Ensure images fit properly */
@@ -13,4 +16,4 @@
     background-color: rgba(255, 255, 255, 0.104);
     border-color: 1px solid black !important;
     @apply rounded-xl;
-  } */
+  }
