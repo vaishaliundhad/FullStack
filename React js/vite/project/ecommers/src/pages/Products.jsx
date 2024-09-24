@@ -1,10 +1,14 @@
 import React from 'react'
 import Zoomsection from '../helpers/Zoomsection'
+import InnerBanner from '../helpers/InnerBanner'
 
 const Products = () => {
   return (
     <div>
-      <Zoomsection/>
+      <div>
+        <InnerBanner innerBannerTile="Product" innerBannerBreadcrumbs="Product" />
+      </div>
+      <Zoomsection />
     </div>
   )
 }

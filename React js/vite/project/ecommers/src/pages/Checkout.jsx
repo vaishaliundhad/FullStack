@@ -9,7 +9,7 @@ const Checkout = () => {
     return (
 
         <div>
-            <InnerBanner innerBannerTile="Checkout"  innerBannerBreadcrumbs="Checkout" className="checkout"/>
+            <InnerBanner innerBannerTile="Checkout"  innerBannerBreadcrumbs="Checkout"/>
 
 
             <div className='flex'>
@@ -18,10 +18,11 @@ const Checkout = () => {
                 <div>
                     <h1 className='ml-10 text-4xl'>Billing details</h1>
                     <div className='flex'>
-                        <div className='m-10'>
-                            <label for="first_name" class="block text-gray-700 dark:text-black " >First Name*</label>
-                            <input type="text" id="first_name" className='w-30 h-30 rounded border py-2 px-24 mt-1'></input>
+                       <div className='ml-10'>
+                            <label for="first_name" class="block text-gray-700 dark:text-black mt-9 ">First Name*</label>
+                            <input type="text" id="first_name" className='w-12/12 h-30 rounded border py-2 m-2 px-24 mt-1 ml-1 mt-1' ></input>
                         </div>
+                    
                         <div className='md:max-hidden'>
                             <label for="last_name" class="block text-gray-700 dark:text-black mt-9 ml-1">Last Name*</label>
                             <input type="text" id="last_name" className='w-12/12 h-30 rounded border py-2 m-2 px-24 mt-1 ml-1 mt-1' ></input>

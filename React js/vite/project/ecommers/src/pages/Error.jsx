@@ -1,6 +1,7 @@
 import React from 'react'
 import { IoHome } from "react-icons/io5";
 import { useNavigate } from 'react-router-dom';
+import InnerBanner from '../helpers/InnerBanner'
 
 // const Error = () => {
 //   return (

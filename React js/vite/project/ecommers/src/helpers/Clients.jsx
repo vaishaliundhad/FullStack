@@ -5,7 +5,7 @@ import { GoStarFill } from "react-icons/go";
 const Clients = ({heading , text , name , meta , image , title , price}) => {
     return (
             <div className=''>
-                <div className='bg-white w-[435px] h-[396px] pt-11 pr-9 pb-6 pl-9 rounded-lg border border-solid' style={{ borderColor: "var(--border-line)" }}>
+                <div className='bg-white w-[435px] h-[396px] pt-11 pr-9 pb-6 pl-9 rounded-lg border'>
                     <div className='flex gap-2 mb-4'>
                         <GoStarFill style={{ color: "var(--primary-color)" }} />
                         <GoStarFill style={{ color: "var(--primary-color)" }} />

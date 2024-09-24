@@ -45,13 +45,13 @@ function HappyClient() {
     ]
   };
   return (
-    <div className="slider-container overflow-hidden " style={{ border: "var(--secondary-color)" }}>
-      <div className='mt-20 mb-24 h-[726px] happyclient' style={{ backgroundColor: "var(--secondary-color)" }} >
+    <div className=" overflow-hidden  " style={{ border: "var(--secondary-color)" }}>
+      <div className='mt-20 mb-24 h-[675px] ' style={{ backgroundColor: "var(--secondary-color)" }} >
         <div className='container-section flex flex-col items-center mb-14'>
-          <h1 className='text-[42px]'>Happy Clients</h1>
+          <h2 className='text-[38px] mt-16'>Happy Clients</h2>
           <p className='pt-2 text-gray-700'>See what our satisfied customers have to say about our electronic accessories.</p>
         </div>
-        <Slider {...settings} className='container-section dotses'>
+        <Slider {...settings} className='container-section happyclient  ml-10 overflow-hidden '>
 
           <div>
             <Clients heading={`Best Online Fashion Site`} text={`“ I always find something stylish and affordable on this web fashion site ”`} name={`Robert Smith`} meta={`Customer From USA`} image={smtwatch1} title={`3-in-1 Wireless Charger with Official MagSafe Charging 15W`} price={`$105.95`} />

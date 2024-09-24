@@ -1,11 +1,14 @@
 import React from 'react'
+import InnerBanner from '../helpers/InnerBanner'
 
 const AboutUs = () => {
-  return (
-    <div>
-      <h1>bout</h1>
-    </div>
-  )
+    return (
+        <div>
+            <div>
+                <InnerBanner innerBannerTile="About Us" innerBannerBreadcrumbs="About Us" />
+            </div>
+        </div>
+    )
 }
 
 export default AboutUs

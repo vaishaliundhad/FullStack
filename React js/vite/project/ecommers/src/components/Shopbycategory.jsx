@@ -10,14 +10,14 @@ const Shopbycategory = () => {
   return (
     <div className='mainshop justify-between overflow-hidden'>
       <div>
-        <h1 className='text-4xl m-10 10'>Shop by category.</h1>
+        <h1 className='text-4xl m-10 '>Shop by category.</h1>
       </div>
 
-      <div className='container flex justify-evenly gap-4 '>
+      <div className='container flex justify-evenly gap-4 overflow-hidden '>
 
         <div className='cardSection'>
-          <div className='cardimg'>
-            <img className='rounded ' src={asset4} alt="" />
+          <div className='cardimg overflow-hidden'>
+            <img className='rounded hover:scale-125 duration-[5s]' src={asset4} alt="" />
           </div>
           <div className='cardinfo'>
 
@@ -32,7 +32,10 @@ const Shopbycategory = () => {
         </div>
 
         <div className='cardSection'>
-          <img className='rounded' src={asset5} alt="" />
+          <div className='overflow-hidden'>
+            <img className='rounded hover:scale-125 duration-[5s]' src={asset5} alt="" />
+          </div>
+
           <div className='cardinfo'>
             <h4>Cables</h4>
             <p className='mt-2 text-xs	'>6 items</p>
@@ -42,9 +45,12 @@ const Shopbycategory = () => {
           </div>
         </div>
 
-        <div className='cardSection'>
+        <div className='cardSection '>
+          <div className='overflow-hidden'>
+            <img className='rounded hover:scale-125 duration-[5s]' src={asset6} alt="" />
+          </div>
 
-          <img className='rounded' src={asset6} alt="" />
+
 
           <div className='cardinfo'>
             <h4>Adapters</h4>
@@ -58,7 +64,10 @@ const Shopbycategory = () => {
 
 
         <div className='cardSection'>
-          <img className='rounded' src={asset7} alt="" />
+          <div className='overflow-hidden'>
+            <img className='rounded hover:scale-125 duration-[5s]' src={asset7} alt="" />
+          </div>
+         
 
           <div className='cardinfo'>
             <h4>Headphone</h4>

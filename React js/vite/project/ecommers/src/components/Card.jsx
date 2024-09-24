@@ -30,17 +30,17 @@ import asset10 from '../assets/asset10.jpg'
 
 const Card = () => {
   return (
-    <div className='flex container-section gap-7 max-md:block m-10 overflow-hidden'>
-        <div className='relative'>
-          <img src={asset10} className="h-[649px] w-[683px] rounded-2xl" alt="" />
+    <div className='flex container-section gap-7 cardproduct max-md:block m-10 overflow-hidden'>
+        <div className='relative overflow-hidden'>
+          <img src={asset10} className="h-[649px] w-[683px] rounded-2xl cardproductimage" alt="" />
           <div className='absolute bottom-3 left-1/4 right-1/4 text-center'>
             <span className='text-xs font-bold'>HOT ACCESSORIES</span>
             <h4 className='text-2xl font-extrabold mb-5 max-lg:text-xl'>Smart Assistant</h4>
             <button className='mb-5 rounded-full py-2 px-6' style={{backgroundColor: "var(--primary-color)"}}>Shop now</button>
           </div>
         </div>
-        <div className='relative'>
-          <img src={asset9} className="h-[649px] w-[683px] rounded-2xl" alt="" />
+        <div className='relative overflow-hidden'>
+          <img src={asset9} className="h-[649px] w-[683px] rounded-2xl cardproductimage" alt="" />
           <div className='absolute bottom-3 left-1/4 right-1/4 text-center'>
             <span className='text-xs font-bold'>FAST AND FREE SHIPPING</span>
             <h4 className='text-2xl font-extrabold mb-5 max-lg:text-xl'>True Earbuds</h4>
