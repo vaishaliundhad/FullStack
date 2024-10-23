@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Operation with HTML & JavaScript</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+    <script src="Script.js"></script>
+</head>
+<body>
+
+    <h1>CRUD Operation Example</h1>
+
+    <h2>Create Item</h2>
+    <form id="itemForm">
+        <input type="text" id="itemName" placeholder="Enter item name" required>
+        <button type="submit">Add Item</button>
+    </form>
+
+    <h2>Item List</h2>
+    <table id="itemTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Items will be dynamically added here -->
+        </tbody>
+    </table>
+
+</body>
+</html>

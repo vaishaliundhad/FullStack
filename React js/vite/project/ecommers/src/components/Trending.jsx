@@ -73,7 +73,6 @@ import watch2 from '../assets/watch2.jpg'
 import smtwatch1 from '../assets/smtwatch1.jpg'
 import smtwatch2 from '../assets/smtwatch2.jpg'
 
-// import './trend.css' 
 const Trending = () => { 
     const settings = { 
         dots: true, 
@@ -84,8 +83,8 @@ const Trending = () => {
     }; 
  
     const products = [ 
-        { img1: phone1, img2: phone2, title: "UltraGlass 2 Treated Screen Protectore for iphone 15 Pro", price: "$99.99" }, 
-        { img1: switch1, img2: switch2, title: "Smart Light Switch with Thred", price: "$49.99" }, 
+        { img1: phone1, img2: phone2, title: "UltraGlass 2 Treated Screen Protectore for iphone 15 Pro", price: "$99.99", className:"pt-2"}, 
+        { img1: switch1, img2: switch2, title: "Smart Light Switch with Thred", price: "$49.99",className:"pt-2" }, 
         { img1: buds1, img2: buds2, title: "SoundForm Rise", price: "$99.99" }, 
         { img1: headphone1, img2: headphone2, title: "Wireless on-Ear Headphones for kids", price: "$99.99" }, 
         { img1: watch1, img2: watch2, title: "3-in-1 Wireless Charger with official MagSafe Charging 15W", price: "$99.99" }, 
@@ -104,7 +103,8 @@ const Trending = () => {
                         </div> 
                         <div className="list-info"> 
                             <h3>{product.title}</h3> 
-                            <p className='text-bold text-[14px]'>Price: {product.price}</p> 
+                            <p className='text-bold text-[14px] '>Price: {product.price}</p> 
+                          
                         </div> 
                     </div> 
                 ))} 

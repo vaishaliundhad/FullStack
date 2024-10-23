@@ -17,24 +17,24 @@ const Navbar2 = () => {
             </div>
 
 
-            <div className='pl-10'>
+            <div className='pl-10 logo'>
                 <img src={logo} alt="Logo" className='lg:justify-self-center' />
             </div>
 
 
             <div>
-                <nav className='max-md:hidden'>
-                    <ul className='flex gap-6'>
+                <nav className='max-md:hidden nav'>
+                    <ul className='flex gap-6 pages'>
                         <li><NavLink to="/" className='hover:text-gray-700'>Home</NavLink></li>
                         <li><NavLink to="/shop" className='hover:text-gray-700'>Shop</NavLink></li>
                         <li><NavLink to="/products" className='hover:text-gray-700'>Products</NavLink></li>
                         <li className='relative group'>
-                         
+
                             <NavLink to="#" className='flex hover:text-gray-700 items-center'>
                                 Pages
                                 <IoIosArrowDown className='pl-1 text-lg' />
                             </NavLink>
-                           
+
                             <div className='absolute left-0 hidden group-hover:flex flex-col bg-white shadow-md px-6 py-2 mt-2 rounded-md'>
                                 <NavLink to="/aboutus" className='block px-4 py-2 hover:bg-gray-100'>About Us</NavLink>
                                 <NavLink to="/faq" className='block px-4 py-2 hover:bg-gray-100'>FAQ</NavLink>
@@ -42,7 +42,7 @@ const Navbar2 = () => {
                                 <NavLink to="/checkout" className='block px-4 py-2 hover:bg-gray-100'>Checkout</NavLink>
                             </div>
                         </li>
-                       
+
                         <li><NavLink to="/blog" className='hover:text-gray-700'>Blog</NavLink></li>
                         <li><NavLink to="/buynow" className='hover:text-gray-700'>Buy Now</NavLink></li>
                         <li><NavLink to="/login" className='hover:text-gray-700'>Login</NavLink></li>
@@ -50,12 +50,19 @@ const Navbar2 = () => {
                 </nav>
             </div>
 
-      
-            <div className='flex gap-3 text-2xl pr-5'>
-                <IoSearch />
-                <RxPerson className='max-md:hidden' />
-                <FaRegHeart className='max-md:hidden' />
-                <RiShoppingBag2Line />
+
+            <div className='flex gap-3 text-2xl pr-5 mr-6'>
+                <IoSearch className='hover:text-red-500 text-xl' />
+                <RxPerson className='max-md:hidden hover:text-red-500 text-xl' />
+                <div className='relative mr-1'>
+                    <FaRegHeart className='max-md:hidden hover:text-red-500 text-xl ' />
+
+                    <div className='absolute text-xs text-white mt-[-26px] ml-[12px] border px-[5px] py-[-10px] bg-red-600 rounded-[50%]'>0</div>
+                </div>
+                <div className='relative'>
+                    <RiShoppingBag2Line className='max-md:hidden hover:text-red-500 text-xl' />
+                    <div className='absolute text-xs text-white mt-[-26px] ml-[12px] border px-[5px] py-[-10px] bg-red-600 rounded-[50%]'>0</div>
+                </div>
             </div>
 
             <Outlet />

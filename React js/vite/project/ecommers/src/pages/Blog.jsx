@@ -9,9 +9,12 @@ import blog5 from '../assets/blog5.jpg'
 import blog6 from '../assets/blog6.jpg'
 import blog7 from '../assets/blog7.jpg'
 import blog8 from '../assets/blog8.jpg'
+import Footerwhite  from '../components/Footerwhite'
+
 
 const Blog = () => {
   return (
+    <>
     <div>
       {/* <div>
         <AllinnerBanner title="Blog Grid" Breadcrumbs="Fashion" />
@@ -31,6 +34,14 @@ const Blog = () => {
       </div>
     
     </div>
+
+{/* footer section */}
+
+<Footerwhite/>
+
+
+        </>
+  
   )
 }
 

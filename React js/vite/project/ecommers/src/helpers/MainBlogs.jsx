@@ -11,7 +11,7 @@ const MainBlogs = ({ image, title }) => {
           <img src={image} className='object-cover w-[410px] h-[410px] hover:scale-125 duration-[4s] ' alt="" />
         </div>
 
-        <div className='absolute bottom-[18px] left-[18px] bg-white text-black font-bold text-xs h-8 flex px-4 rounded-sm'><button>ACCESSORIES</button></div>
+        <div className='absolute bottom-[18px] left-[18px] bg-white text-black font-bold text-xs h-8 flex px-4 rounded-sm btn btnLight'><button>ACCESSORIES</button></div>
       </div>
       <div className='flex flex-col gap-[15px] pt-[30px] '>
         <p className='hover:text-lime-500'>{title}</p>

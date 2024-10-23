@@ -68,23 +68,23 @@ const Login = () => {
                     </div>
 
                     <div className="mb-6">
-                        <a href="#" className="text-sm text-gray-500 hover:text-gray-700 underline hover:text-lime-500">
+                        <a href="#" className="text-sm text-gray-500 underline hover:text-lime-500">
                             Forgot your password?
                         </a>
                     </div>
 
                     <div className=" flex  gap-x-3 text justify-around">
-                        <button className="px-10 h-12  w-52 text-sm bg-black text-white py-4 rounded font-semibold hover:bg-gray-800">
+                        <button className="btn btnDark px-10 h-12  w-52 text-lg bg-black text-white py-4 rounded font-semibold pl-20">
                             Login
                         </button>
                         {/* <button className='ml-auto w-4/6  bg-gray-800  text-white p-2 rounded font-semibold hover:bg-gray-900 mt-6' type="submit">Log In</button> */}
 
 
                         <div className="flex justify-between items-center underline gap-x-0 ">
-                            <a href="#" className="text-sm text-gray-700 hover:text-gray-900 font-semibold hover:text-lime-500">New customer?
+                            <a href="#" className="text-sm text-gray-700  font-semibold hover:text-lime-500">New customer?
                             <a
                                 href="#"
-                                className="text-sm text-gray-700 hover:text-gray-900 font-semibold hover:text-lime-500"
+                                className="text-sm text-gray-700 font-semibold hover:text-lime-500"
                             >
                                 Create your account
                                

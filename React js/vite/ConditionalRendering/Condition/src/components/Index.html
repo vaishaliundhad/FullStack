@@ -1,0 +1,211 @@
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read Records</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+
+
+    <div class="overflow-x-auto">
+        <div class="bg-gradient-to-r from-cyan-500 to-blue-500">
+            <header class="bg-blue-400">
+                <nav class="navbar flex ">
+                    <div class="navdiv flex justify-between ">
+                        <div class="logo">
+                            
+                            <h1 class="font-awesome font-serif text-3xl mt-8 mb-6 ml-6 ">Record</h1>
+
+                        </div>
+                        <ul class="flex gap-14 justify-between mt-10 ml-60 mb-6 item-center">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Login</a></li>
+                            <li><a href="#">Contactus</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+
+
+
+
+
+            <div class="container mx-auto mt-10">
+
+                <h1 class="text-3xl font-bold text-center mb-6 py-9 w-full  ">Read Records</h1>
+
+                <div class="flex  mb-4">
+                    <input type="text" placeholder="Type a name..." class="border border-gray-300 px-4 py-2 " />
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4  rounded-r">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </button>
+
+                </div>
+
+                <div class="flex justify-end mb-4">
+                    <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-md">
+                        <i class="fa-solid fa-trash"></i> Delete Selected
+                    </button>
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md mx-2">
+                        <i class="fa-solid fa-download"></i> Export CSV
+                    </button>
+                    <button class="bg-blue-700 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded-md">
+                        <i class="fa-solid fa-plus"></i> Create Record
+                    </button>
+                </div>
+
+                <table class="w-full border border-gray-300">
+                    <thead>
+                        <tr class="bg-gray-100">
+                            <th class="px-4 py-2 text-left border border-gray-300">
+                                <input type="checkbox" class="m-1" />
+                            </th>
+                            <th class="px-4 py-2 text-left border border-gray-300">Name</th>
+                            <th class="px-4 py-2 text-left border border-gray-300">Description</th>
+                            <th class="px-4 py-2 text-left border border-gray-300">Price</th>
+                            <th class="px-4 py-2 text-left border border-gray-300">Category</th>
+                            <th class="px-4 py-2 text-left border border-gray-300">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="hover:bg-gray-100">
+                            <td class="px-4 py-2 text-left border border-gray-300">
+                                <input type="checkbox" class="m-1" />
+                            </td>
+                            <td class="px-4 py-2 text-left border border-gray-300">Pillow</td>
+                            <td class="px-4 py-2 text-left border border-gray-300">Sleeping well is important.</td>
+                            <td class="px-4 py-2 text-left border border-gray-300">$8.99</td>
+                            <td class="px-4 py-2 text-left border border-gray-300">Personal</td>
+                            <td class="px-4 py-2 text-left border border-gray-300">
+                                <button
+                                    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md mr-2">
+                                    <i class="fa-solid fa-pen-to-square"></i> Edit
+                                </button>
+                                <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-2 rounded-md">
+                                    <i class="fa-solid fa-delete-left"></i> Delete
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-gray-100">
+                            <td class="px-4 py-2 text-left border border-gray-300">
+                                <input type="checkbox" class="m-1">
+                            </td>
+                            <td class="px-4 py-2 text-left border border-gray-300">Earphone</td>
+                            <td class="px-4 py-2 text-left border border-gray-300 ">You need this one if you love music.
+                            </td>
+                            <td class="px-4 py-2 text-left border border-gray-300">$9.00</td>
+                            <td class="px-4 py-2 text-left border border-gray-300">Personal</td>
+                            <td class="px-4 py-2 text-left border border-gray-300">
+                                <button
+                                    class="bg-blue-500	hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md mr-2">
+                                    <i class="fa-solid fa-pen-to-square"></i> Edit
+                                </button>
+                                <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-2 rounded-md">
+                                    <i class="fa-solid fa-delete-left"></i> Delete
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-gray-100">
+                            <td class="px-4 py-2 text-left border border-gray-300">
+                                <input type="checkbox" class="m-1">
+                            </td>
+                            <td class="px-4 py-2 text-left border border-gray-300">Mouse</td>
+                            <td class="px-4 py-2 text-left border border-gray-300 ">Very useful if you love your
+                                computer.</td>
+                            <td class="px-4 py-2 text-left border border-gray-300">$11.35</td>
+                            <td class="px-4 py-2 text-left border border-gray-300">Personal</td>
+                            <td class="px-4 py-2 text-left border border-gray-300">
+                                <button
+                                    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md mr-2 ">
+                                    <i class="fa-solid fa-pen-to-square"></i> Edit
+                                </button>
+                                <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-2 rounded-md">
+                                    <i class="fa-solid fa-delete-left  sm:hidden"></i> Delete
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-gray-100">
+                            <td class="px-4 py-2 text-left border border-gray-300">
+                                <input type="checkbox" class="m-1">
+                            </td>
+                            <td class="px-4 py-2 text-left border border-gray-300">Trash Can</td>
+                            <td class="px-4 py-2 text-left border border-gray-300 ">It will help you maintain
+                                cleanliness.</td>
+                            <td class="px-4 py-2 text-left border border-gray-300">$3.95</td>
+                            <td class="px-4 py-2 text-left border border-gray-300">Sports</td>
+                            <td class="px-4 py-2 text-left border border-gray-300">
+                                <button
+                                    class="bg-blue-500  hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md mr-2  ">
+                                    <i class="fa-solid fa-pen-to-square "></i> Edit
+                                </button>
+                                <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-2 rounded-md">
+                                    <i class="fa-solid fa-delete-left "></i> Delete
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-gray-100">
+                            <td class="px-4 py-2 text-left border border-gray-300">
+                                <input type="checkbox" class="m-1">
+                            </td>
+                            <td class="px-4 py-2 text-left border border-gray-300">Eye Glasses</td>
+                            <td class="px-4 py-2 text-left border border-gray-300 ">It will make you read better.</td>
+                            <td class="px-4 py-2 text-left border border-gray-300">$6.00</td>
+                            <td class="px-4 py-2 text-left border border-gray-300">Sports</td>
+                            <td class="px-4 py-2 text-left border border-gray-300">
+                                <button
+                                    class="bg-blue-500	hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md mr-2 ">
+                                    <i class="fa-solid fa-pen-to-square "></i> Edit
+                                </button>
+                                <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-2 rounded-md ">
+                                    <i class="fa-solid fa-delete-left"></i> Delete
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="flex  mt-4">
+                    <div class="pagination">
+                        <button class="bg-blue-400 hover:bg-blue-500 text-white font-bold ml-0 py-2 px-4  ">
+                            1
+                        </button>
+                        <button class="bg-gray-200 hover:bg-gray-300 text-gray-700 font-bold py-2 ml-0 px-4 ">
+                            2
+                        </button>
+                        <button
+                            class="bg-gray-200 hover:bg-gray-300 text-gray-700 font-bold py-2 px-4 rounded-r ml-0  ">
+                            &gt;&gt;
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="flex justify-end mb-4">
+                    <input type="text" placeholder="Type page number..." class="border border-gray-300 px-4 py-2 ">
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4  rounded-r">
+                        Go
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        </table>
+    </div>
+</body>
+
+</html>   -->

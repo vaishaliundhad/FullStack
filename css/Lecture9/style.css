@@ -1,4 +1,4 @@
-body {
+.container {
     flex-wrap: wrap;
     border: 1px solid black;
 
@@ -381,4 +381,12 @@ h1{
     margin-left: 100px;
     font-size: 30px; 
      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+}
+
+
+@media (max-width:320px){
+    .container{
+        flex-wrap:wrap;
+        flex-direction:column;
+    }
 }

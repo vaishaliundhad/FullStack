@@ -15,6 +15,7 @@ import Trending from '../components/Trending'
 import HappyClient from '../components/HappyClient';
 import Footer from '../components/Footer';
 import Blogpost from '../components/Blogpost';
+import Payment from '../components/Payment';
 
 
 
@@ -44,7 +45,7 @@ const Home = () => {
                             <div className='slide1 '>
                                 <p className="text-2xl text">UP TO 40% OFF CHARGERS AND MORE.</p>
                                 <h1 className='text-7xl pt-10 '>Saving for <br />dads and grads.</h1>
-                                <button className=' bg-black text-white  rounded-full  p-3 px-6 text-lg flex mt-10 btnDark'>Shop collection <div className='pl-3 pt-2'><MdKeyboardArrowRight /></div></button>
+                                <button className='  py-3 px-6  btn mt-10 btnDark'>Shop collection <div className='pl-3 pt-2'><MdKeyboardArrowRight /></div></button>
                             </div>
 
                         </div>
@@ -52,7 +53,7 @@ const Home = () => {
                         <div className='mainslider2' >
                             <h3><img src={asset2} alt="" /></h3>
                             <div className='slide2'>
-                                <p className="text-xl">UP TO 40% OFF CHARGERS AND MORE.</p>
+                                <p className="text-xl text">UP TO 40% OFF CHARGERS AND MORE.</p>
                                 <h1 className='text-7xl pt-10  '>Modern design</h1>
                                 <button className='bg-black text-white  rounded-full p-3 px-6 text-lg flex mt-10 btnDark '>Shop collection <div className='pl-3 pt-2'><MdKeyboardArrowRight /></div></button>
                             </div>
@@ -61,7 +62,7 @@ const Home = () => {
                         <div className='mainslider3'>
                             <h3><img src={asset3} alt="" /></h3>
                             <div className='slide3'>
-                                <p className="text-xl">UP TO 40% OFF CHARGERS AND MORE.</p>
+                                <p className="text-xl text">UP TO 40% OFF CHARGERS AND MORE.</p>
                                 <h1 className='text-7xl pt-10'>Fast Charging</h1>
                                 <button className='bg-black text-white rounded-full  p-3 px-6 text-lg flex mt-10 btnDark' >Shop collection <div className='pl-3 pt-2'><MdKeyboardArrowRight /></div></button>
                             </div>
@@ -83,7 +84,9 @@ const Home = () => {
 <HappyClient/>
 {/* <MainBlogs/> */}
 <Blogpost/>
+<Payment/>
 <Footer/>
+
         </>
     );
 }
