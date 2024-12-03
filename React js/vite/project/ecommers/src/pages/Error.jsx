@@ -18,7 +18,7 @@ return (
       </div>
       <div className=''>
    
-        <button onClick={() => navigate('/')} className='w-40 bg-black h-16 rounded-full text-white bg-fuchsia-950'>Back to Home</button>
+        <button onClick={() => navigate('/')} className='w-40  h-16 rounded-full text-white bg-fuchsia-950'>Back to Home</button>
       </div>
 
     </div>
