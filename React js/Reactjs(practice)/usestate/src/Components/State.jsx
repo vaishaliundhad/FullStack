@@ -161,7 +161,7 @@ const State = () => {
             <h1 className='heading'>This is State Memory Components</h1>
             <div className='flex justify-around'>
               
-                <button className="bg-blue-500 px-4 py-2 align-center  flex align-center mt-6 text-white text-lg" onClick={handlePrevious}>
+                <button className="bg-blue-500  prev px-4 py-2 align-center  flex align-center mt-6 text-white text-lg" onClick={handlePrevious}>
                     <GrPrevious className="mt-[6px] mr-2" />  Prev
                 </button>
                 <button

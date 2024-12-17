@@ -10,3 +10,18 @@
     @apply p-4 bg-gray-500 text-white text-center m-2 font-bold
   }
 }
+
+
+@keyframes prev {
+  from {
+
+  }
+  to{
+
+  }
+  0%{
+    background-color:blue;
+    left:0;
+
+  }
+}
