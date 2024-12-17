@@ -465,3 +465,156 @@ mysql> select* from stud1;
 |    3 | mansi | 9987654321 | 20000 |
 +------+-------+------------+-------+
 3 rows in set (0.00 sec)
+
+
+date:= 5/12/2024
+
+**************theta style***********
+
+mysql> select description , product_rate
+ from product_master , sales_order_details 
+ where product_master.product_no= sales_order_details.product_no;
+
+
++--------------+--------------+
+| description  | product_rate |
++--------------+--------------+
+| T-Shirts     |       525.00 |
+| T-Shirts     |       525.00 |
+| T-Shirts     |       525.00 |
+| T-Shirts     |       525.00 |
+| Shirts       |      1050.00 |
+| Cotton Jeans |     12000.00 |
+| Trousers     |      3150.00 |
+| Pull Overs   |      5250.00 |
+| Pull Overs   |      5250.00 |
+| Denim Shirts |      8400.00 |
+| Denim Shirts |      8400.00 |
+| Lycra Tops   |      1050.00 |
++--------------+--------------+
+12 rows in set (0.07 sec)
+
+
+2. select pm.description ,sod.product_rate
+  from product_master pm,sales_order_details sod
+  where pm.product_no=sod.product_no;
+
+  +--------------+--------------+
+| description  | product_rate |
++--------------+--------------+
+| T-Shirts     |       525.00 |
+| T-Shirts     |       525.00 |
+| T-Shirts     |       525.00 |
+| T-Shirts     |       525.00 |
+| Shirts       |      1050.00 |
+| Cotton Jeans |     12000.00 |
+| Trousers     |      3150.00 |
+| Pull Overs   |      5250.00 |
+| Pull Overs   |      5250.00 |
+| Denim Shirts |      8400.00 |
+| Denim Shirts |      8400.00 |
+| Lycra Tops   |      1050.00 |
++--------------+--------------+
+12 rows in set (0.01 sec)
+
+
+  3. select sales_order_details.order_no, product_rate , order_date, description
+   from sales_order , sales_order_details, product_master
+   where sales_order_details.order_no = sales_order.order_no
+   and sales_order_details.product_no = product_master.product_no;
+
++----------+--------------+------------+--------------+
+| order_no | product_rate | order_date | description  |
++----------+--------------+------------+--------------+
+| O19001   |       525.00 | 2004-06-12 | T-Shirts     |
+| O19001   |      8400.00 | 2004-06-12 | Denim Shirts |
+| O19001   |      5250.00 | 2004-06-12 | Pull Overs   |
+| O19002   |       525.00 | 2004-06-25 | T-Shirts     |
+| O19003   |     12000.00 | 2004-04-03 | Cotton Jeans |
+| O19003   |      1050.00 | 2004-04-03 | Skirts       |
+| O19008   |       525.00 | 2004-05-24 | T-Shirts     |
+| O19008   |      1050.00 | 2004-05-24 | Lycra Tops   |
+| O46865   |      3150.00 | 2004-02-18 | Trousers     |
+| O46865   |      5250.00 | 2004-02-18 | Pull Overs   |
+| O46865   |       525.00 | 2004-02-18 | T-Shirts     |
+| O46865   |      1050.00 | 2004-02-18 | Shirts       |
+| O46866   |      8400.00 | 2004-05-20 | Denim Shirts |
++----------+--------------+------------+--------------+
+13 rows in set (0.01 sec)
+
+
+
+   ** ANSI STYLE **
+
+   syntax:-  select * from  <tb-1> inner join <tb-2> on expressions;
+
+   example :- select * from product_master pm 
+              inner join sales_order_details sod on sod.product_no
+              inner join sales_order so on sod.order_no = so.order_no
+              inner join client_master cm on so.client_no = cm.client_no;
+
+
+12-12-2024
+
+select ag_fun(column_name(s))
+from table name
+where condition
+Group by column_name
+
+
+1.select city 
+from client_master
+Group by city;
+
++-----------+
+| city      |
++-----------+
+| Mumbai    |
+| Madras    |
+| Bangalore |
+| Mangalore |
++-----------+
+4 rows in set (0.01 sec)
+
+2.select city, sum(bal_due )
+from client_master
+Group by city;
+
++-----------+---------------+
+| city      | sum(bal_due ) |
++-----------+---------------+
+| Mumbai    |      22000.00 |
+| Madras    |          0.00 |
+| Bangalore |          0.00 |
+| Mangalore |          0.00 |
++-----------+---------------+
+4 rows in set (0.01 sec)
+
+3.select city , max(bal_due)
+from client_master
+Group by city;
+
+ +-----------+--------------+
+| city      | max(bal_due) |
++-----------+--------------+
+| Mumbai    |     15000.00 |
+| Madras    |         0.00 |
+| Bangalore |         0.00 |
+| Mangalore |         0.00 |
++-----------+--------------+
+4 rows in set (0.01 sec)
+
+
+4. 
+    select city , sum(bal_due)
+    from client_master
+    where city="mumbai"
+    Group by city
+    having max(bal_due);
+
+
+
+5.  select city,sum (bal_due)
+    from client_master
+    Group by city
+    having sum(bal_due)>10000;

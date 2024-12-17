@@ -7,11 +7,13 @@ import Wishlist from './Wishlist'
 import Profile from './Profile'
 import Login from './Login'
 import Error from './Error'
+import Navbar from '../Components/Navbar'
 
 const Layout = () => {
   return (
     <div>
       <BrowserRouter>
+      <Navbar/>
         <Routes>
             <Route path='/' element={<Home/>}></Route>
             <Route path='/shop' element={<Shop/>}></Route>

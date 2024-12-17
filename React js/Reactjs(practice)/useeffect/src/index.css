@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+  .heading{
+    @apply p-4 bg-blue-600 text-white text-center text-3xl
+  }
+  .btn{
+    @apply p-4 bg-gray-500 text-white text-center m-2 font-bold
+  }
+}
+
+/* index.css */
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";

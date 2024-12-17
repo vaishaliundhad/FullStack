@@ -7,11 +7,17 @@ import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import { NavLink } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { FaShoppingCart, FaHeart } from "react-icons/fa";
 
 const Navbar = () => {
+
+  const cardDatalength = useSelector((state) => state.cart)
   return (
-      <Box sx={{ flexGrow: 1 }}>
-        <AppBar position="static">
+    <Box sx={{ flexGrow: 1 }}>
+      <AppBar position="static">
+        <div className="flex  items-center justify-around">
+
           <Toolbar>
             {/* <IconButton
               size="large"
@@ -19,31 +25,40 @@ const Navbar = () => {
               color="inherit"
               aria-label="menu"
               sx={{ mr: 2 }}
-            >
+              >
               <MenuIcon />
             </IconButton> */}
             <Button color="inherit">
-                <NavLink to="/">Home</NavLink>
+              <NavLink to="/">Home</NavLink>
             </Button>
             <Button color="inherit">
-                <NavLink to="/shop">Shop</NavLink>
+              <NavLink to="/shop">Shop</NavLink>
             </Button>
             <Button color="inherit">
-                <NavLink to="/profile">Profile</NavLink>
+              <NavLink to="/profile">Profile</NavLink>
             </Button>
             <Button color="inherit">
-                <NavLink to="/cart">Cart</NavLink>
-            </Button>
-            <Button color="inherit">
-                <NavLink to="/wishlist">Wishlist</NavLink>
-            </Button>
-            <Button color="inherit">
-                <NavLink to="/login">Login</NavLink>
+              <NavLink to="/login">Login</NavLink>
             </Button>
           </Toolbar>
-        </AppBar>
-      </Box>
+          <div className="flex gap-8">
+            <div>
+              <NavLink to="/cart">
+                <FaShoppingCart />
+                <span className="absolute top-[12px] ml-2 text-center bg-red-600 rounded-full h-4 w-4 text-xs  flex justify-center items-center border border-white">{cardDatalength.length}</span>
+              </NavLink>
+            </div>
+            
+
+            <NavLink to="/wishlist">
+            <FaHeart/>
+            </NavLink>
+            
+          </div>
+        </div>
+      </AppBar>
+    </Box>
   );
-};
+};  
 
 export default Navbar;

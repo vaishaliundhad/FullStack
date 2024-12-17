@@ -1,6 +1,6 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import { buy_choco, buy_cake } from './redux/Action'
+// import { buy_choco, buy_cake } from './redux/Action'
 
 const ReduxContainer = () => {
 

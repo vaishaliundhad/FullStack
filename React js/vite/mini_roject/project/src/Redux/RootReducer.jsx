@@ -1,12 +1,13 @@
 import CartReducer from "./CartReducer";
-import WhishlistReduser from "./WhishlistReducer";
-
+import WishlistReducer from "./WishlistReducer";
 import ProductReducer from "./ProductReducer";
+import { cartToWishReducer } from "./CartReducer";
 import { combineReducers } from "redux";
 
 const RootReducer = combineReducers({
     cart:CartReducer,
-    wishlist:WhishlistReduser,
+    cartToWish:cartToWishReducer,
+    wishlist:WishlistReducer,
     product:ProductReducer
 })
 

@@ -327,8 +327,6 @@ insert into sales_order_details values ('O46866', 'P07975', 1 , 0 ,1050);
 insert into sales_order_details values ('O10008', 'P00001', 10 , 5 ,525);
 insert into sales_order_details values ('O10008', 'P07975', 5 , 3 ,1050);
 
- INSERT INTO sales_order_details VALUES ('O46865', 'P0345', 4, 4, 1050);
- INSERT INTO sales_order_details VALUES ('O19001', 'P07965', 2 , 1 ,8400);
 
 
 -- 3.exercise on retriving records from a table 

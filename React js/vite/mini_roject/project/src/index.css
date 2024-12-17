@@ -5,5 +5,8 @@
 @layer components{
     .heading{
         @apply p-4 bg-purple-500 text-white font-black text-4xl text-center
+    } .btn{
+        @apply p-2 bg-purple-600 text-white ms-2
     }
+
 }

@@ -1,12 +1,10 @@
-import React from 'react';
-import { product_set } from './Constant'
+import React from 'react'
+import { PRODUCT_SET } from './Constatnt'
 
-const ProductReducer = (state=[], action) => {
-    switch (action.type) {
-        case product_set: return {
-
-        }
-        default: return state;
+const ProductReducer = (state = [] , action) => {
+    switch(action.type){
+        case PRODUCT_SET:return[...state , action.payload]
+        default:return state
     }
 }
 
