@@ -1,0 +1,135 @@
+**************starting for mongodb***********
+mongosh
+connection for
+Current Mongosh Log ID: 67702ea618a81aa4574eeb85
+Connecting to:          mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.3.7
+Using MongoDB:          8.0.4
+Using Mongosh:          2.3.7
+
+For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
+
+------
+   The server generated these startup warnings when booting
+   2024-12-20T21:02:34.844+05:30: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+------
+
+
+************************************************all databases show************************************************
+syntax:-show dbs
+output:    
+   admin      40.00 KiB
+   bansi     112.00 KiB
+   config     72.00 KiB
+   employee  152.00 KiB
+   local      72.00 KiB
+
+*************************************************** all tables show **********************************************  
+
+syntax:- show collections
+
+**************************************************create new database********************************************* 
+syntax:- use database name
+example:- use employee
+
+**************************************************create new collection*******************************************
+
+ syntax:-  db.createCollection("collection_Name")  
+ example:- db.createCollection("emp")
+
+**************************************************To create single document insert******************************
+command:- inserOne()
+{}:- json format
+synatax:- db.collection_Name.insertOne({filed1:"value" , fileld2:"value"})
+
+**************************************************To create multiple  document insert****************************
+
+command:- inserMany()
+[]:- array of object
+synatax:- db.collection_Name.inserMany([
+  {filed1:"value" , fileld2:"value"},
+  {filed1:"value" , fileld2:"value"},
+  {filed1:"value" , fileld2:"value"} 
+])
+
+************************************************** to update ***************************************************
+ syntax:- db.old_collection_name.renameCollection("New name") 
+ exale:- db.stud.renameCollection("students")     
+        
+*********************************************** to drop collection*********************************************** 
+syntax: db.collection_Name.drop()       
+exaple: db.students.drop()  
+
+db.dropDatabase():- dabase kau drop karu ae batave
+
+********************************************** to help ***********************************************************
+
+db.help()
+db.collection_name.help()
+
+********************************************* to create multiple insert *******************************************
+
+db.emp.insertMany([
+    {name:'any' , age: '21', status:'busy', city:'surat'},
+    {name:'tony' , age: '25', status:'busy', contact:9876543210},
+    {name:'bobby' , age: '28', status:'online'},
+    {name:'sonny' , age: '28', status:'away'},
+    {name:'cher' , age: '20', status:'busy'}
+])
+
+
+db.emp.find({}).skip(1)
+db.emp.find({}).sort("name")
+db.emp.find({}).count()
+
+
+30/12/2024
+
+$eq , $ne,  $gt,  $gte ,  $lt ,  $lte ,  $in ,  $nin
+
+      db.collection.find({field :{$eq:value}})
+sort:-db.collection.find({field : value})
+
+ db.books.find({"author.profile.courses":{$eq:2}})
+ db.books.find({"author.profile.courses":2})
+ db.books.find({"author.profile.courses":{$ne:2}})
+ db.books.find({"author.profile.courses":{$gt:2}})
+ db.books.find({"author.profile.courses":{$lt:2}})
+ db.books.find({"author.profile.courses":{$lte:2}})
+ db.books.find({"author.profile.courses":{$in:2}})
+ db.books.find({"author.profile.courses":{$nin:2}})
+
+
+ db.books.find({"author.callname":"Dan"})
+
+ db.books.find({"tags":"database"})
+ db.books.find({"tags":{$eq:"database"}})
+
+ db.books.find({"tags" :{$eq:["language", "freeware" ,"programing"] }})
+ db.books.find({tags :{$eq:["language", "freeware" ,"programing"] }})
+
+ db.books.find({no_of_reviews:{$in : [1,4,5]}})
+ db.books.find({no_of_reviews:{$nin : [1,4,5]}})
+
+31 / 12/ 2024
+
+db.books.find( {$or: [{no_of_reviews : {$lt:3}}, {downloadable: true}  ]})
+db.books.find( {$or: [{no_of_reviews : {$lt:3}}, {downloadable: true},{"author.profile": {$gte : 2}}  ]})
+db.books.find( {$or: [{no_of_reviews : {$lt:3}}, {downloadable: true},{"author.profile": {$gte : 2}}  ]}).count()
+db.books.find( {$or: [{no_of_reviews : {$lt:3}}, {downloadable: true},{"author.profile": {$gte : 2}}  ]}).skip("2")
+db.books.find( {$and: [{no_of_reviews : {$lt:3}}, {downloadable: true}  ]})
+db.books.find( {$and: [{no_of_reviews : {$lt:3}}, {downloadable: true},{"author.profile": {$gte : 2}}    ]})
+db.books.find( {$nor: [{no_of_reviews : {$lt:3}}, {downloadable: true},{"author.profile": {$gte : 2}}]})
+
+db.books.find({
+   $or: [{no_of_reviews : {$lt:3}},
+   {downloadable:true},
+   {"author.profile.books": {$gte : 2}}
+   ]
+})
+
+db.books.find({
+   $nor: [{no_of_reviews : {$lt:3}},
+   {downloadable:true},
+   {"author.profile.books": {$gte : 2}}
+   ]
+})
